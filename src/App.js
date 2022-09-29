@@ -11,7 +11,7 @@ function App() {
         <Route exact path="/" element={<Main />} />
         <Route exact path="/quiz" element={<Quiz />} />
         <Route exact path="/results" element={<Results />} />
-        <Route exact path="/results/:analyze" element={<Questions />} />
+        <Route exact path="/results/analyze" element={<Questions />} />
 
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>

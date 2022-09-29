@@ -74,10 +74,11 @@ const ScoreResult = ({ grade, score, name }) => {
 
 const Results = () => {
   const { score, name, userQuizQuestions } = useContext(DataContext);
-  const [loadingPage, setLoadingPage] = useState(false);
+  const [loadTestReRun, setLoadTestReRun] = useState(false);
+  const [showResults, setShowResults] = useState(false);
 
   const handleLoadingPage = () => {
-    setLoadingPage(true);
+    setLoadTestReRun(true);
   };
 
   useEffect(() => {
@@ -99,14 +100,15 @@ const Results = () => {
         <ScoreResult grade={userScore} score={score} name={name} />
       </Section>
       <Section classes="flex justify-between space-y-0">
-        <Link to="/results/:analyze">
-          <Button resultsBtn="text-blue-600  ring-2 ring-blue-600 hover:bg-blue-600 hover:text-white hover:ring-0">
-            Show Results
-          </Button>
-        </Link>
+
+          <Button resultsBtn="text-blue-600  ring-2 ring-blue-600 hover:bg-blue-600 hover:text-white hover:ring-0">Show Resukts</Button>
+            {showResults && (
+              <Questions showResults={showResults} setShowResults={setShowResults} />
+              )}
+          
         <Button handleClick={handleLoadingPage}>Try Again</Button>
-        {loadingPage && (
-          <Loader loadingPage={loadingPage} setLoadingPage={setLoadingPage} />
+        {loadTestReRun && (
+          <Loader loadTestReRun={loadTestReRun} setLoadTestReRun={setLoadTestReRun} />
         )}
       </Section>
     </Container>

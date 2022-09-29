@@ -3,7 +3,7 @@ import { DataContext } from "../context/DataContext";
 import { Container, Section, Header, Button } from "../components/index.js";
 import { GiCheckMark, GiCrossMark } from "react-icons/gi";
 
-const Questions = () => {
+const Questions = ({showResults, setShowResukts}) => {
   const { name, userQuizQuestions } = useContext(DataContext);
 
   userQuizQuestions.map((question) =>
@@ -19,31 +19,31 @@ const Questions = () => {
         {userQuizQuestions.map(
           ({ question, correct_answer, selected_answer, read_more }, idx) => (
             <Section key={idx} classes="space-y-0 ">
-              <div className="shadow-sm">
-                <div className="rounded-t-lg antialiased bg-gray-200 px-3 py-6 text-xl ">
+              <div className="shadow-sm text-base antialiased">
+                <div className="rounded-t-lg bg-gray-200 p-6">
                   <p className="font-bold pb-1">
                     {idx + 1}. {question[0]}
                   </p>
-                  <p className="pl-6 w-1/2 text-sm">
+                  <p className="px-6 w-1/2 text-base">
                     <code>{question[1]}</code>
                   </p>
                 </div>
-                <p className="text-lg antialiased pl-3 py-4 italic bg-gray-100">
-                  Correct Answer: {correct_answer}
+                <p className="px-6 py-4 bg-gray-100">
+                <span className="font-bold text-sm">Correct Answer:</span> {correct_answer}
                 </p>
                 <p
-                  className={`text-lg antialiased  font-bold py-4 pl-3 italic rounded-b-lg ${
+                  className={`py-4 px-6 rounded-b-lg ${
                     selected_answer === correct_answer
                       ? "bg-green-300 "
                       : "bg-red-300 "
                   }`}
                 >
-                  Your Answer: {selected_answer}
+                  <span className="font-bold text-sm">Your Answer:</span> {selected_answer}
                 </p>
               </div>
 
-              <div className="text-lg antialiased pt-4">
-                <p className="inline-block">read more: </p>{" "}
+              <div className="text-base antialiased pt-4">
+                <p className="inline-block pl-6">read more: </p>{" "}
                 <ul className="inline-block">
                   {read_more.map((read, idx) =>
                     read["link"] === "" && read["reference"] === "" ? (

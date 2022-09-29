@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Container, Section, Header } from "../components/index.js";
 import gsap from "gsap";
 
-const Loader = ({ loadingPage, setLoadingPage }) => {
+const Loader = ({ loadTestReRun, setLoadTestReRun }) => {
   const { setTimerState, setDuration } = useContext(DataContext);
 
   const navigate = useNavigate();
@@ -30,16 +30,16 @@ const Loader = ({ loadingPage, setLoadingPage }) => {
           setTimerState(true);
           setDuration(10);
           navigate("/quiz");
-          setLoadingPage(false);
+          setLoadTestReRun(false);
         },
       },
       1.5
     );
-  }, [setLoadingPage, setTimerState, setDuration, navigate]);
+  }, [setLoadTestReRun, setTimerState, setDuration, navigate]);
 
   return (
     <>
-      {loadingPage ? (
+      {loadTestReRun ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
             <div className="relative w-full h-full flex justify-center">
