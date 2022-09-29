@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Quiz from "./pages/Quiz";
 import Results from "./pages/Results";
 import Main from "./pages/Main";
+import Questions from "./components/Questions";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/quiz" element={<Quiz />} />
-        <Route exact path="/result" element={<Results />} />
+        <Route exact path="/results" element={<Results />} />
+        <Route exact path="/results/:analyze" element={<Questions />} />
 
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>

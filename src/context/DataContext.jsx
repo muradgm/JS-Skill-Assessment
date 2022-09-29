@@ -20,6 +20,8 @@ export const DataContextProvider = ({ children }) => {
   const [duration, setDuration] = useState(null);
   const [timerState, setTimerState] = useState(false);
 
+  const [userQuizQuestions, setUserQuizQuestions] = useState([]); // questions is an array of objects
+
   // question countdown timer that sets the duration to 90 seconds and runs a setInterval function to handle the countdown to 0
 
   const minutes = Math.floor(duration / 60);
@@ -57,6 +59,8 @@ export const DataContextProvider = ({ children }) => {
         minutes,
         seconds,
         shuffleQuestions,
+        userQuizQuestions,
+        setUserQuizQuestions,
       }}
     >
       {children}

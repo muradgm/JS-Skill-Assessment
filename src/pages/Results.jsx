@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../context/DataContext";
 import { Link } from "react-router-dom";
+import Questions from "../components/Questions";
 import {
   Container,
   Section,
@@ -8,7 +9,7 @@ import {
   Button,
   Loader,
 } from "../components/index.js";
-import questions from "../test.js";
+// import questions from "../test.js";
 
 //Icons
 import {
@@ -72,7 +73,7 @@ const ScoreResult = ({ grade, score, name }) => {
 };
 
 const Results = () => {
-  const { score, name } = useContext(DataContext);
+  const { score, name, userQuizQuestions } = useContext(DataContext);
   const [loadingPage, setLoadingPage] = useState(false);
 
   const handleLoadingPage = () => {
@@ -89,6 +90,8 @@ const Results = () => {
   const userScore =
     (score > 12 ? "a" : score <= 12 && score > 10 ? "b" : "c") || "c";
 
+  console.log("userQuizQuestions", userQuizQuestions);
+
   return (
     <Container classes="max-w-xxl min-w-full divide-y">
       <Section classes="pt-4">
@@ -96,7 +99,7 @@ const Results = () => {
         <ScoreResult grade={userScore} score={score} name={name} />
       </Section>
       <Section classes="flex justify-between space-y-0">
-        <Link to="/">
+        <Link to="/results/:analyze">
           <Button resultsBtn="text-blue-600  ring-2 ring-blue-600 hover:bg-blue-600 hover:text-white hover:ring-0">
             Show Results
           </Button>

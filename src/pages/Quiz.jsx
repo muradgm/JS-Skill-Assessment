@@ -17,6 +17,8 @@ const Quiz = () => {
     seconds,
     duration,
     setDuration,
+    userQuizQuestions,
+    setUserQuizQuestions,
   } = useContext(DataContext);
 
   // const [currentQuestion, setCurrentQuestion] = useState({});
@@ -37,6 +39,17 @@ const Quiz = () => {
   // const [questionsArray, setQuestionsArray] = useState([]);
 
   const navigate = useNavigate();
+
+  //save randomQuestions[currQues].correct_answer, and selected to userQuizQuestions array
+  const saveUserQuizQuestions = () => {
+    const userQuizQuestion = {
+      question: randomQuestions[currQues].question,
+      correct_answer: randomQuestions[currQues].correct_answer,
+      selected_answer: selected,
+      read_more: randomQuestions[currQues].read_more,
+    };
+    setUserQuizQuestions([...userQuizQuestions, userQuizQuestion]);
+  };
 
   useEffect(() => {
     setChoices(
@@ -65,7 +78,7 @@ const Quiz = () => {
       setCurrQues(currQues + 1);
       setDuration(15);
       if (currQues + 1 === randomQuestions.length) {
-        navigate("/result");
+        navigate("/results");
       }
     } else if (timerState) {
       const timer = setInterval(() => {
@@ -84,7 +97,8 @@ const Quiz = () => {
   //! check logic, should be array.length, if currQues === 14 should be outside of first if statement
   const handleClick = () => {
     setTimerState(true);
-    setDuration(10);
+    setDuration(90);
+    saveUserQuizQuestions();
 
     if (currQues < 15) {
       if (selected === correct) {
@@ -95,7 +109,7 @@ const Quiz = () => {
       setSelected("");
 
       if (currQues === randomQuestions.length - 1) {
-        navigate("/result");
+        navigate("/results");
         setTimerState(false);
       }
     }
@@ -111,6 +125,8 @@ const Quiz = () => {
   useEffect(() => {
     setWarning(duration <= 10 ? true : false);
   }, [duration]);
+
+  console.log("userQuizQuestions", userQuizQuestions);
 
   return (
     <Container classes="max-w-xxl min-w-full divide-y">

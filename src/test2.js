@@ -10,7 +10,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_operators.asp",
-        reference: "JavaScript Comparison Operators",
+        reference: "Javascript Comparison Operators",
       },
     ],
   },
@@ -44,7 +44,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_functions.asp",
-        reference: "Functions in JavaScript",
+        reference: "Functions in javascript",
       },
     ],
   },
@@ -59,7 +59,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_operators.asp",
-        reference: "JavaScript Assignment Operators",
+        reference: "Javascript Assignment operators",
       },
     ],
   },
@@ -79,7 +79,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes",
-        reference: "JavaScript Classes",
+        reference: "",
       },
     ],
   },
@@ -99,7 +99,7 @@ const questions = [
     read_more: [
       {
         link: "https://stackoverflow.com/a/2035662/15067394",
-        reference: "JavaScript is synchronous and single threaded",
+        reference: "Javascript is synchronous and single threaded",
       },
     ],
   },
@@ -119,7 +119,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static",
-        reference: "JavaScript Class static Keyword",
+        reference: "Javascript Class static Keyword",
       },
     ],
   },
@@ -140,7 +140,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.javascripttutorial.net/javascript-anonymous-functions/",
-        reference: "Immediately Invoked Anonymous Functions",
+        reference: "Immediately invoked anonymous functions",
       },
     ],
   },
@@ -158,7 +158,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures",
-        reference: "JavaScript Closures",
+        reference: "",
       },
     ],
   },
@@ -176,7 +176,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_functions.asp",
-        reference: "Defining JavaScript Functions",
+        reference: "Defining javascript functions",
       },
     ],
   },
@@ -231,7 +231,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes",
-        reference: "JavaScript Classes",
+        reference: "Javascript Classes",
       },
     ],
   },
@@ -247,7 +247,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_arrays.asp",
-        reference: "Accessing JavaScript Arrays",
+        reference: "Accessing javascript arrays",
       },
     ],
   },
@@ -263,7 +263,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures",
-        reference: "JavaScript data types",
+        reference: "Javascript data types",
       },
     ],
   },
@@ -278,7 +278,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/jsref/dom_obj_event.asp",
-        reference: "events",
+        reference: "DOM events",
       },
     ],
   },
@@ -298,7 +298,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw",
-        reference: "JavaScript throw",
+        reference: "Javascript throw",
       },
     ],
   },
@@ -315,7 +315,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_json_parse.asp",
-        reference: "Convert JSON to JavaScript Object",
+        reference: "Convert json to javascript object",
       },
     ],
   },
@@ -333,7 +333,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.javascript.com/learn/conditionals",
-        reference: "JavaScript conditionals",
+        reference: "Javascript conditionals",
       },
     ],
   },
@@ -349,7 +349,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_loop_for.asp",
-        reference: "JavaScript For...Loops",
+        reference: "Javascript for loops",
       },
     ],
   },
@@ -364,7 +364,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods",
-        reference: "JavaScript Object Static Methods",
+        reference: "Javascript Object static methods",
       },
     ],
   },
@@ -400,7 +400,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-        reference: "JavaScript Map Methods",
+        reference: "Javascript map methods",
       },
     ],
   },
@@ -429,7 +429,7 @@ const questions = [
     read_more: [
       {
         link: "https://ntgard.medium.com/https-medium-com-ntgard-boolean-logic-in-javascript-part-1-3371af974f19",
-        reference: "Boolean Logic",
+        reference: "Boolean logic",
       },
     ],
   },
@@ -462,8 +462,8 @@ const questions = [
     correct_answer: "Student.prototype = new Person();",
     read_more: [
       {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_Prototype_chain",
-        reference: "JavaScript Prototype Object",
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain",
+        reference: "JavaScript prototype Object",
       },
     ],
   },
@@ -483,7 +483,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_strict.asp",
-        reference: "What is useStrict in JavaScript",
+        reference: "what is useStrict in JavaScript",
       },
     ],
   },
@@ -511,7 +511,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-        reference: "Boolean of a String",
+        reference: "Boolean of a string",
       },
     ],
   },
@@ -524,7 +524,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_reserved.asp",
-        reference: "JavaScript Reserved Words",
+        reference: "JavaScript reserved words",
       },
     ],
   },
@@ -575,7 +575,7 @@ const questions = [
     read_more: [
       {
         link: "https://stackoverflow.com/question/56318460/cannot-access-variable-name-before-initialization",
-        reference: "Accessing before Initialization",
+        reference: "Accessing before initialization",
       },
     ],
   },
@@ -599,7 +599,7 @@ const questions = [
     read_more: [
       {
         link: "https://stackoverflow.com/question/17295056/array-vs-object-efficiency-in-javascript",
-        reference: "Efficiency of Lookups",
+        reference: "Efficiency of lookups",
       },
     ],
   },
@@ -637,7 +637,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
-        reference: "How to import library in JavaScript",
+        reference: "How to import library in js",
       },
     ],
   },
@@ -669,7 +669,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.guru99.com/node-js-generators-compare-callbacks.html#:~:text=Generators%20are%20function%20executions%20that,resumed%20at%20a%20later%20point.",
-        reference: "What are generators in Nodejs",
+        reference: "What are generators in nodejs",
       },
     ],
   },
@@ -743,7 +743,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/jsref/jsref_prototype_array.asp",
-        reference: "Array Prototype",
+        reference: "Array prototype",
       },
     ],
   },
@@ -910,7 +910,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain",
-        reference: "JavaScript Prototypes",
+        reference: "JavaScript prototypes",
       },
     ],
   },
@@ -976,7 +976,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
-        reference: "Arrow Functions",
+        reference: "Arrow functions",
       },
     ],
   },
@@ -995,7 +995,7 @@ const questions = [
       {
         link: "",
         reference:
-          "To ensure that tasks further down in your code are not initiated until earlier tasks have completed you use the normal (synchronous) flow where each command is executed sequentially.Asynchronous code allows you to break this sequence: start a long running function (AJAX call to an external service) and continue running the rest of the code in parallel.",
+          "*EXPLANATION:** to ensure that tasks further down in your code are not initiated until earlier tasks have completed you use the normal (synchronous) flow where each command is executed sequentially.Asynchronous code allows you to break this sequence: start a long running function (AJAX call to an external service) and continue running the rest of the code in parallel.",
       },
     ],
   },
@@ -1060,7 +1060,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_break.asp",
-        reference: "JavaScript Break Vs. Continue",
+        reference: "JavaScript Break vs Continue",
       },
     ],
   },
@@ -1171,7 +1171,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
-        reference: "JavaScript events",
+        reference: "JavaScript Events",
       },
     ],
   },
@@ -1255,7 +1255,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/Events",
-        reference: "JavaScript events",
+        reference: "JavaScript Events",
       },
     ],
   },
@@ -1271,7 +1271,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_window.asp",
-        reference: "What is the JavaScript Window",
+        reference: "What is the javascript window",
       },
     ],
   },
@@ -1310,7 +1310,7 @@ const questions = [
     read_more: [
       {
         link: "https://reactjs.org/docs/react-component.html",
-        reference: "React Lifecycle Methods",
+        reference: "React lifecycle methods",
       },
     ],
   },
@@ -1326,7 +1326,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects",
-        reference: "Working with Objects",
+        reference: "Working with objects",
       },
     ],
   },
@@ -1374,15 +1374,15 @@ const questions = [
     id: 82,
     question: [
       "What will be logged to the console?",
-      "console.log('I');\n        setTimeout(() => {\n        console.log('love');\n        }, 0);\n        console.log('JavaScript!');",
+      "console.log('I');\n        setTimeout(() => {\n        console.log('love');\n        }, 0);\n        console.log('Javascript!');",
     ],
     incorrect_answer: [
-      "plaintextloveJavaScript!",
+      "plaintextloveJavascript!",
       "The output may change with each execution of code and cannot be determined.",
-      "IloveJavaScript!",
+      "IloveJavascript!",
     ],
     // correct_answer: 1,
-    correct_answer: "plaintextIJavaScript!love",
+    correct_answer: "plaintextIJavascript!love",
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout#reasons_for_delays_longer_than_specified",
@@ -1406,7 +1406,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment",
-        reference: "Array Deconstruction",
+        reference: "Array deconstruction",
       },
     ],
   },
@@ -1511,7 +1511,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_strict.asp",
-        reference: "Strict in JavaScript Classes",
+        reference: "Strict in javascript classes",
       },
     ],
   },
@@ -1611,7 +1611,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_arrays.asp",
-        reference: "Working with Arrays",
+        reference: "Working with arrays",
       },
     ],
   },
@@ -1659,7 +1659,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_arrays.asp",
-        reference: "Working with Arrays",
+        reference: "Working with arrays",
       },
     ],
   },
@@ -1675,7 +1675,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/",
-        reference: "JavaScript Type Coercion",
+        reference: "JavaScript type coercion",
       },
     ],
   },
@@ -1729,7 +1729,7 @@ const questions = [
     read_more: [
       {
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
-        reference: "JavaScript Arrow Functions",
+        reference: "JavaScript Arrow functions",
       },
     ],
   },
@@ -1797,7 +1797,7 @@ const questions = [
     read_more: [
       {
         link: "https://www.w3schools.com/js/js_arrays.asp",
-        reference: "Working with Arrays",
+        reference: "Working with arrays",
       },
     ],
   },
@@ -1940,7 +1940,7 @@ const questions = [
     correct_answer: "document.querySelector('span.content')",
     read_more: [
       {
-        link: "",
+        link: "https://",
         reference: "",
       },
     ],
@@ -2037,7 +2037,7 @@ const questions = [
       "class RainForest {\n  static minimumRainFall = 60;\n  }\n  let congo = new RainForest();\n  RainForest.minimumRainFall = 80;\n  console.log(congo.minimumRainFall);",
     ],
     incorrect_answer: [
-      "None of these answers, as static is not a feature in JavaScript.",
+      "None of these answers, as static is not a feature in Javascript.",
       "60",
       "80",
     ],
@@ -2235,7 +2235,7 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "flagDatabase.countries[0].flag",
-    read_more: [{ link: "", reference: "" }],
+    read_more: [{ Link: "", reference: "" }],
   },
   {
     id: 131,
@@ -2254,10 +2254,10 @@ const questions = [
   },
   // {
   //   id: 132,
-  //   question: ["Which snippet is the correct answer", "const numbers = [1,2,3]; \n numbers[10] = 11; \n console.log(numbers);"],
-  //   incorrect_answer: ["[1,2,3,null x 7, 11]", "[1,2,3,11]", "[1,2,3,empty x 7, 11]", "syntax error"],
-  // correct_answer: "[1,2,3,empty x 7, 11], to read more about this topic check out this link about sparse arrays","],
-  // read_more: [{ link: "https://www.freecodecamp.org/news/sparse-and-dense-arrays-in-javascript/#:~:text=A%20sparse%20array%20is%20one,the%20sequence%20of%20their%20indices.&text=Normally%2C%20the%20length%20property%20of,sparse%20arrays%20they%20don't.", reference: "The array will be sparse, meaning that it has empty slots." }],
+  //   question: ["", ""],
+  //   incorrect_answer: ["", "", "", ""],
+  //   correct_answer: 3,
+  //   read_more:[
 
   // },
 ];
