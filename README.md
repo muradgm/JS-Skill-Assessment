@@ -1,4 +1,4 @@
-$\mathcal{\color{red}{LOADING...  \ WORK \ IN \ PROGRESS}}$
+$$\mathcal{\color{red}{LOADING...  \ WORK \ IN \ PROGRESS}}$$
 > __Note__ LOADING... 
  WORK IN PROGRESS
 
