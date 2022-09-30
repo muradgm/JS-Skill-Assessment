@@ -1,4 +1,7 @@
-$$\textsf{\color{red}\huge\textbf{ WORK \ IN \ PROGRESS!} }$$  
+<!---
+https://en.wikibooks.org/wiki/LaTeX/Fonts
+-->
+$$\textsf{\color{red}\Huge\textbf{ WORK \ IN \ PROGRESS!} }$$  
 
 
 # Linkedin Skill Assessment
