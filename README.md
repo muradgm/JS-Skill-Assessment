@@ -1,6 +1,4 @@
-$$\mathbb{\color{red}{LOADING...  \ WORK \ IN \ PROGRESS}}$$
-> __Note__ LOADING... 
- WORK IN PROGRESS
+$$\textsf{\color{red}\Large\textbf{ WORK \ IN \ PROGRESS!} }$$  
 
 
 # Linkedin Skill Assessment
