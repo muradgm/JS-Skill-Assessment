@@ -1,5 +1,7 @@
-<h1 color="red"> LOADING... 
+```diff
+<h1> LOADING... 
  WORK IN PROGRESS </h1>
+ ```
 
 
 # Linkedin Skill Assessment
