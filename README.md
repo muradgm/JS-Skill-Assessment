@@ -15,7 +15,7 @@ i thought maybe i can do something where i can practice the questions instead of
 . in the results page, you can either try the assessment again or check the questions, where you made mistakes, see correct answers and follow links to read more about the question topic.
 
 
-######tech used:
+###### Tools used:
 ```
 "react": "^18.2.0",
 "react-icons": "^4.4.0",
@@ -24,7 +24,7 @@ i thought maybe i can do something where i can practice the questions instead of
 "gsap": "^3.11.1",
 ```
 
-######Next Step:
+###### Next Step:
 adding more languages and frameworks:
 - HTML
 - CSS
