@@ -1,7 +1,6 @@
-```diff
+$\mathcal{\color{red}{LOADING...  \ WORK \ IN \ PROGRESS}}$
 <h1> LOADING... 
  WORK IN PROGRESS </h1>
- ```
 
 
 # Linkedin Skill Assessment
