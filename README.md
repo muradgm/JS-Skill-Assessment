@@ -1,3 +1,6 @@
+# LOADING... WORK IN PROGRESS
+
+
 # Linkedin Skill Assessment Clone
 
 ###### the purpose of this clone is to help you prepare for the Linkedin skill assessment.
