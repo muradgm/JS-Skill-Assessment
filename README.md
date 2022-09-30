@@ -4,7 +4,7 @@ https://en.wikibooks.org/wiki/LaTeX/Fonts
 $$\textnormal{\color{red}\Huge\textbf{ WORK \ IN \ PROGRESS!} }$$  
 
 
-# JavaScript Skill Assessment [Linkedin version]
+## JavaScript Skill Assessment [Linkedin version]
 
 ###### the purpose of this clone is to help you prepare for the Linkedin skill assessment.
 
