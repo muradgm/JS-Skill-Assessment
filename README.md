@@ -6,7 +6,7 @@ $$\textnormal{\color{red}\Huge\textbf{ WORK \ IN \ PROGRESS!} }$$
 
 ## JavaScript Skill Assessment [Linkedin version]
 
-> __Note__ #####  The purpose of this clone is to help you prepare for the Linkedin skill assessment.
+> __Note__ The purpose of this clone is to help you prepare for the Linkedin skill assessment.
 
 as i was preparing for the linkedin JS skill assessment using the help of this link.
 
