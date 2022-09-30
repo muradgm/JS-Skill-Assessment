@@ -2,7 +2,7 @@
 https://en.wikibooks.org/wiki/LaTeX/Fonts
 -->
 $$\textnormal{\color{red}\Huge\textbf{ WORK \ IN \ PROGRESS!} }$$  
-
+<br />
 
 ## JavaScript Skill Assessment [Linkedin version]
 
