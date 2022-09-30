@@ -1,4 +1,4 @@
-$$\textsf{\color{red}\Large\textbf{ WORK \ IN \ PROGRESS!} }$$  
+$$\textsf{\color{red}\huge\textbf{ WORK \ IN \ PROGRESS!} }$$  
 
 
 # Linkedin Skill Assessment
