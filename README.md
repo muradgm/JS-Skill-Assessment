@@ -2,7 +2,7 @@
  WORK IN PROGRESS </h1>
 
 
-# Linkedin Skill Assessment Clone
+# Linkedin Skill Assessment
 
 ###### the purpose of this clone is to help you prepare for the Linkedin skill assessment.
 
