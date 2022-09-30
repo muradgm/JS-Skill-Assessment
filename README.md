@@ -12,7 +12,7 @@ as i was preparing for the linkedin JS skill assessment using the help of this l
 
 i thought maybe i can do something where i can practice the questions instead of just reading through the md file
 
-#####- Features:
+###### - Features:
 . adding username and greeting with time of the day
 . 15 multiple choice questions
 . add name to enable start quiz button
@@ -21,7 +21,7 @@ i thought maybe i can do something where i can practice the questions instead of
 . in the results page, you can either try the assessment again or check the questions, where you made mistakes, see correct answers and follow links to read more about the question topic.
 
 
-###### Tools used:
+###### - Tools used:
 ```
 "react": "^18.2.0",
 "react-icons": "^4.4.0",
