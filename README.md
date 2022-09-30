@@ -8,9 +8,7 @@ $$\textnormal{\color{red}\Huge\textbf{ WORK \ IN \ PROGRESS!} }$$
 
 > __Note__ The purpose of this clone is to help you prepare for the Linkedin skill assessment.
 
-as i was preparing for the linkedin JS skill assessment using the help of this link.
-
-i thought maybe i can do something where i can practice the questions instead of just reading through the md file
+As i was preparing for the linkedin JS skill assessment using the help of this link [linkedin-skill-assessments-quizzes]([https://link-url-here.org](https://ebazhanov.github.io/linkedin-skill-assessments-quizzes/javascript/javascript-quiz.html)), i thought maybe i could do something to practice the questions instead of just reading through the md file
 
 #### Features:
 - enter name to enable start quiz button.
