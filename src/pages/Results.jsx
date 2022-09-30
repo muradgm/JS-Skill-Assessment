@@ -74,12 +74,18 @@ const ScoreResult = ({ grade, score, name }) => {
 
 const Results = () => {
   const { score, name, userQuizQuestions } = useContext(DataContext);
-  const [loadTestReRun, setLoadTestReRun] = useState(false);
+  const [reRunTest, setReRunTest] = useState(false);
   const [showResults, setShowResults] = useState(false);
 
-  const handleLoadingPage = () => {
-    setLoadTestReRun(true);
+  const handleTestReRunModal = () => {
+    setReRunTest(true);
   };
+
+  const handleResultsModal = () => {
+    setShowResults(true);
+  };
+
+  console.log("showResults", showResults);
 
   useEffect(() => {
     window.onpopstate = function () {
@@ -100,15 +106,22 @@ const Results = () => {
         <ScoreResult grade={userScore} score={score} name={name} />
       </Section>
       <Section classes="flex justify-between space-y-0">
+        <Button
+          handleClick={handleResultsModal}
+          resultsBtn="text-blue-600  ring-2 ring-blue-600 hover:bg-blue-600 hover:text-white hover:ring-0"
+        >
+          Show Results
+        </Button>
+        {showResults && (
+          <Questions
+            showResults={showResults}
+            setShowResults={setShowResults}
+          />
+        )}
 
-          <Button resultsBtn="text-blue-600  ring-2 ring-blue-600 hover:bg-blue-600 hover:text-white hover:ring-0">Show Resukts</Button>
-            {showResults && (
-              <Questions showResults={showResults} setShowResults={setShowResults} />
-              )}
-          
-        <Button handleClick={handleLoadingPage}>Try Again</Button>
-        {loadTestReRun && (
-          <Loader loadTestReRun={loadTestReRun} setLoadTestReRun={setLoadTestReRun} />
+        <Button handleClick={handleTestReRunModal}>Try Again</Button>
+        {reRunTest && (
+          <Loader reRunTest={reRunTest} setReRunTest={setReRunTest} />
         )}
       </Section>
     </Container>
