@@ -1,6 +1,6 @@
 $\mathcal{\color{red}{LOADING...  \ WORK \ IN \ PROGRESS}}$
-<h1> > __Note__ LOADING... 
- WORK IN PROGRESS </h1>
+> __Note__ LOADING... 
+ WORK IN PROGRESS
 
 
 # Linkedin Skill Assessment
