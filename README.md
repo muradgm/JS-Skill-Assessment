@@ -1,6 +1,6 @@
-#Linkedin Skill Assessment Clone
+# Linkedin Skill Assessment Clone
 
-######the purpose of this clone is to help you prepare for the Linkedin skill assessment.
+###### the purpose of this clone is to help you prepare for the Linkedin skill assessment.
 
 as i was preparing for the linkedin JS skill assessment using the help of this link.
 
