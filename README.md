@@ -13,12 +13,13 @@ as i was preparing for the linkedin JS skill assessment using the help of this l
 i thought maybe i can do something where i can practice the questions instead of just reading through the md file
 
 #### Features:
-- adding username and greeting with time of the day
-- 15 multiple choice questions
-- add name to enable start quiz button
+- enter name to enable start quiz button.
+- 15 multiple choice questions.
+- questions randomly chosen from 140 questions.
 - countdown: 90 seconds countdown per question, if time is up, question is skipped and no points added to the score.
-- on submit, you are directed to the results page, which will show your score and whether or not you passed the assessment.
-- in the results page, you can either try the assessment again or check the questions, where you made mistakes, see correct answers and follow links to read more about the question topic.
+- adding username and greeting with time of the day
+- on test submit, you are directed to the results page to see test score and.
+- in the results page, you can choose to either take the assessment again or see the test analysis, where you made mistakes, see correct answers and follow links to read more about the question topic.
 
 
 #### Tools used:
