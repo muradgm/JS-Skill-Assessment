@@ -17,7 +17,7 @@ const timeOfTheDay = () => {
 };
 
 const Header = () => {
-  const { user } = useContext(DataContext);
+  const { userName } = useContext(DataContext);
 
   return (
     <div className="flex items-center justify-between mb-8">
@@ -40,11 +40,7 @@ const Header = () => {
         </p>
       </div>
       <div className="flex-col justify-between">
-        <p className="font-bold antialiased">
-          Hey{" "}
-          {user.name ? user.name[0].toUpperCase() + user.name.slice(1) : "User"}
-          ,
-        </p>
+        <p className="font-bold antialiased">Hey {userName()},</p>
         <p className="font-bold antialiased">Good {timeOfTheDay()}.</p>
       </div>
     </div>

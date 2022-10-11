@@ -28,10 +28,10 @@ const Loader = ({ reRunTest, setReRunTest }) => {
         stagger: 2,
         ease: "power4.out",
         onComplete: () => {
-          // setTimerState(true);
-          // setDuration(10);
-          // navigate("/quiz");
-          // setReRunTest(false);
+          setTimerState(true);
+          setDuration(90);
+          navigate("/quiz");
+          setReRunTest(false);
         },
       },
       1.5

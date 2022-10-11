@@ -6,7 +6,7 @@ import Modal from "./Modal";
 import Question from "./Question";
 
 const Questions = ({ showResults, setShowResults }) => {
-  const { name, userQuizQuestions } = useContext(DataContext);
+  const { userName, userQuizQuestions } = useContext(DataContext);
 
   userQuizQuestions.map((question) =>
     question.read_more.map((read) =>
@@ -18,7 +18,7 @@ const Questions = ({ showResults, setShowResults }) => {
     <>
       {showResults ? (
         <Modal>
-          <Container classes="my-10">
+          <Container classes="my-10 overflow-y-scroll">
             <button
               className="fixed top-0 right-0 p-6"
               onClick={() => {
@@ -30,7 +30,7 @@ const Questions = ({ showResults, setShowResults }) => {
             <Section classes="space-x-0">
               {/* <Header name={name} /> */}
               <h1 className="mt-4 text-2xl font-bold text-center">
-                {name}, here are your results
+                Hello {userName()}, here is your results.
               </h1>
             </Section>
             <Section classes="space-y-0">

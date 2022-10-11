@@ -39,6 +39,14 @@ export const DataContextProvider = ({ children }) => {
     setRandomQuestions(shuffleQuestions(questions).slice(0, 15));
   }, []);
 
+  const userName = () => {
+    let name = user.name
+      ? user.name[0].toUpperCase() + user.name.slice(1)
+      : "User";
+
+    return name;
+  };
+
   // console.log("randomQuestions", randomQuestions);
 
   return (
@@ -61,6 +69,7 @@ export const DataContextProvider = ({ children }) => {
         shuffleQuestions,
         userQuizQuestions,
         setUserQuizQuestions,
+        userName,
       }}
     >
       {children}

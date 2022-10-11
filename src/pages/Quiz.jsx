@@ -76,7 +76,7 @@ const Quiz = () => {
     if (duration === 0 && timerState) {
       setStepper(stepper + steps);
       setCurrQues(currQues + 1);
-      setDuration(15);
+      // setDuration(15);
       if (currQues + 1 === randomQuestions.length) {
         navigate("/results");
       }

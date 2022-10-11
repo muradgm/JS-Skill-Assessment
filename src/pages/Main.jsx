@@ -32,7 +32,7 @@ const Main = () => {
   //create a function to handle the start btn
   const handleStartQuiz = () => {
     setTimerState(true);
-    setDuration(10);
+    setDuration(90);
     navigate("/quiz");
   };
 
