@@ -5,7 +5,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { DataContextProvider } from "./context/DataContext.jsx";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("app"));
 root.render(
   <DataContextProvider>
     <BrowserRouter>

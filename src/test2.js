@@ -2282,3 +2282,154 @@
 // that exceeded our expectations in a positive way. I have great interest for
 // React and its my wish to keep learning further in React and other
 // languages and frameworks.
+
+//find first unique letter in a string
+// function firstUniqueLetter(str) {
+//   let obj = {};// we create an object to store the letters and their count in the string as key value pairs
+//   for (let i = 0; i < str.length; i++) { // we loop through the string
+//     if (obj[str[i]]) {// if the letter is already in the object we increment its value by 1
+//       obj[str[i]]++;//
+//     } else {// else we add the letter to the object and set its value to 1
+//       obj[str[i]] = 1;
+//     }
+//   }
+//   for (let key in obj) { // then we loop through the object
+//     if (obj[key] === 1) { // we check if the value of the letter is 1 we return the letter
+//       return key;
+//     }
+//   }
+//   return "no unique letter";
+// }
+
+// solution 2
+function firstUniqueLetter(str) {
+  let arr = str.split(""); // we split the string into an array of letters
+  for (let i = 0; i < arr.length; i++) {
+    // we loop through the array
+    if (arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i])) {
+      // we check if the index of the letter is the same as the last index of the letter
+      return arr[i]; // if it is we return the letter
+    }
+  }
+  return "no unique letter";
+}
+
+console.log(firstUniqueLetter("abacddebc"));
+
+function capitalize(str) {
+  let words = str.split(" ");
+  words = words.map((word) => (word = word[0].toUpperCase() + word.slice(1)));
+
+  return words.join(" ");
+}
+
+console.log(capitalize("to the moon and back"));
+
+//star rating
+// the function StarRating(str) take the str parameter being passed which will be an average rating between 0.00 and 5.00, and convert this rating into a list of 5 image names to be displayed in a user interface to represent the rating as a list of stars and half stars. Ratings should be rounded to the nearest half. There are 3 image file names available: "full.jpg", "half.jpg", "empty.jpg". The output will be the name of the 5 images (without the extension), from left to right, separated by spaces. For example: if str is "2.36" then this should be displayed by the following image:
+// So your program should return the string
+// "full full half empty empty".
+// Examples Input: "0.38" Output: half empty empty empty empty
+// Input: "4.5" Output: full full full full half
+
+function StarRating(str) {
+  let rating = parseFloat(str); // we convert the string to a number, we can also use Number(str)
+  let stars = []; // we create an empty array to store the stars
+  let fullStars = Math.floor(rating); // here we get the number of full stars by rounding down the rating number to the nearest integer using Math.floor() method
+  console.log(fullStars);
+  let halfStar = rating % 1 >= 0.5 ? 1 : 0; // here we check if the rating is greater than or equal to 0.5 we set halfStar to 1 else we set it to 0
+  console.log(halfStar);
+  let emptyStars = 5 - fullStars - halfStar;
+  for (let i = 0; i < fullStars; i++) {
+    stars.push("full");
+  }
+  for (let i = 0; i < halfStar; i++) {
+    stars.push("half");
+  }
+  for (let i = 0; i < emptyStars; i++) {
+    stars.push("empty");
+  }
+  return stars.join(" ");
+}
+
+console.log(StarRating("4.5"));
+
+// Julia and Samantha are playing with strings. Julia has a string S, and Samantha has a string T which is a subsequence of string S. They are trying to find out what words are missing in T.
+// Help Julia and Samantha to solve the problem. List all the missing words in T, such that inserting them at the appropriate positions in T, in the same order, results in the string S.
+// Constraints
+// 1 <= |T| <= |S| <= 106, where |X| denotes the length of string X.
+// The length of each word will be less than 15.
+
+// Function Parameter
+// You are given a function missingWords that takes the strings S and T as its arguments.
+
+// Function Return Value
+// Return an array of the missing words.
+
+// Sample Input
+// I am using hackerrank to improve programming
+// am hackerrank to improve
+// Sample Output
+// I
+// using
+// programming
+// Explanation
+// Missing words are:
+// 1. I
+// 2. using
+// 3. programming
+
+function missingWords(S, T) {
+  let words = S.split(" ");
+  let missingWords = [];
+  let j = 0;
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] !== T[j]) {
+      missingWords.push(words[i]);
+    } else {
+      j++;
+    }
+  }
+  return missingWords;
+}
+
+console.log(
+  missingWords(
+    "I am using hackerrank to improve programming",
+    "am hackerrank to improve"
+  )
+);
+
+//fibbonacci sequence
+// function fib(n) {
+//   let arr = [0, 1];
+//   for (let i = 2; i <= n; i++) {
+//     arr.push(arr[i - 1] + arr[i - 2]);
+//   }
+//   return arr[n];
+// }
+
+// console.log(fib(10));
+
+function fib(n) {
+  if (n <= 1) {
+    return n;
+  }
+  return fib(n - 1) + fib(n - 2); // here we call the function recursively, which means we call the function inside itself until the base case is reached and then we return the value of the base case and the function starts returning the values of the previous function calls
+}
+
+console.log(fib(10));
+
+// function fib(n) {
+//   let a = 0;
+//   let b = 1;
+//   let c;
+//   for (let i = 2; i <= n; i++) {
+//     c = a + b;
+//     a = b;
+//     b = c;
+//   }
+//   return b;
+// }
+
+// console.log(fib(10));

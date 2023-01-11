@@ -6,7 +6,7 @@ import Questions from "./components/Questions";
 
 function App() {
   return (
-    <div className=" app box-border flex justify-center items-center min-h-screen max-w-4xl mx-auto">
+    <div className="box-border flex justify-center items-center h-full max-w-3xl lg:w-full lg:py-16">
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/quiz" element={<Quiz />} />

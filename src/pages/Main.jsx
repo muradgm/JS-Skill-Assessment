@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 import {
   Button,
   Container,
-  Input,
+  // Input,
   Section,
   Header,
 } from "../components/index.js";
 import { DataContext } from "../context/DataContext";
+import Inputs from "./Inputs";
 
 //Icons
 import { MdTimer, MdFormatListBulleted } from "react-icons/md";
@@ -44,7 +45,7 @@ const Main = () => {
   // console.log("QUESTION", Object.values(randomQuestions[currQues])); // question array
 
   return (
-    <Container classes="max-w-xxl min-w-full divide-y">
+    <Container classes="w-5/6 divide-y">
       <Section classes="pt-4">
         <Header name={name} />
         <p className="text-md antialiased text-gray-600">
@@ -77,29 +78,37 @@ const Main = () => {
           Please enter your name to start the Quiz.
         </p>
         <div className="space-y-5 max-w-sm bg-white pt-4 capitalize">
-          <Input
+          <Inputs
             type="name"
-            handleUserInput={handleUserInput}
-            ph="John Doe"
             value={name}
+            label="Name"
+            name="name"
+            // handleUserInput={handleUserInput}
+            onChange={(e) => setUser({ ...user, name: e.target.value })}
+            // ph="John Doe"
           />
           {show && (
-            <Input
+            <Inputs
               type="email"
-              handleUserInput={handleUserInput}
-              ph="John@email.com"
               value={email}
+              label="Email"
+              name="email"
+              // handleUserInput={handleUserInput}
+              onChange={(e) => setUser({ ...user, email: e.target.value })}
+              // ph="John@email.com"
             />
           )}
-          <div className="flex items-center mb-4">
+          <div className="flex items-center">
             <input
               id="checkbox"
               type="checkbox"
               value=""
               className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500  focus:ring-2"
-              onClick={handleCheckbox}
+              onClick={(e) =>
+                e.target.checked === true ? setShow(true) : setShow(false)
+              }
             />
-            <label htmlFor="checkbox" className="ml-2 text-sm text-gray-900">
+            <label htmlFor="checkbox" className="ml-2 text-gray-900">
               Send me my score
             </label>
           </div>

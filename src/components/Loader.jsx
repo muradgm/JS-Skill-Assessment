@@ -2,6 +2,8 @@ import { useEffect, useContext, useRef } from "react";
 import { DataContext } from "../context/DataContext";
 import { useNavigate } from "react-router-dom";
 import { Container, Section, Header } from "../components/index.js";
+import { MdClose } from "react-icons/md";
+
 import gsap from "gsap";
 import Modal from "./Modal";
 
@@ -28,10 +30,10 @@ const Loader = ({ reRunTest, setReRunTest }) => {
         stagger: 2,
         ease: "power4.out",
         onComplete: () => {
-          setTimerState(true);
-          setDuration(90);
-          navigate("/quiz");
-          setReRunTest(false);
+          // setTimerState(true);
+          // setDuration(90);
+          // navigate("/quiz");
+          // setReRunTest(false);
         },
       },
       1.5
@@ -42,16 +44,23 @@ const Loader = ({ reRunTest, setReRunTest }) => {
     <>
       {reRunTest ? (
         <Modal>
-          <Container classes="relative w-8/12 flex flex-col m-auto h-2/4 items-center justify-between">
-            <button onClick={() => setReRunTest(false)}>close</button>
-            <Section classes="pt-4 w-full">
+          <Container classes="relative w-full flex flex-col m-auto h-2/4 items-center ">
+            {/* <Section classes="pt-4 w-full">
               <Header />
-            </Section>
+            </Section> */}
             {/*body*/}
-            <Section classes="relative flex justify-center w-full h-full">
+            <button
+              className="fixed top-0 right-0 p-6"
+              onClick={() => {
+                setReRunTest(false);
+              }}
+            >
+              <MdClose className="text-3xl" />
+            </button>
+            <Section classes="relative flex-col justify-center w-full h-full">
               <div
                 ref={parentRef}
-                className="absolute w-full flex justify-center"
+                className="w-full h-full flex di justify-center items-center"
               >
                 {[
                   "Preparing new set of questions",
