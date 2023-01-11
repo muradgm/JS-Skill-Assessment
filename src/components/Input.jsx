@@ -6,7 +6,7 @@ const Input = ({ type, handleUserInput, ph, value }) => {
     if (type !== "name") {
       setState(false);
     }
-  });
+  }, []);
 
   return (
     <label htmlFor="helper-text" className={`block`}>

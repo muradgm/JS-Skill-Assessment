@@ -17,16 +17,21 @@ const Quiz = () => {
     seconds,
     duration,
     setDuration,
-    userQuizQuestions,
-    setUserQuizQuestions,
+    selected,
+    setSelected,
+    report,
+    setReport,
   } = useContext(DataContext);
+  console.log("currQues", currQues);
 
   // const [currentQuestion, setCurrentQuestion] = useState({});
 
   //state to handle user answer
   const [choices, setChoices] = useState([]);
-  const [selected, setSelected] = useState("");
+  // const [selected, setSelected] = useState("");
   const [correct, setCorrect] = useState("");
+  console.log("correct", correct);
+
   // to handle th question array and show the code part if there is one
   const [showCode, setShowCode] = useState(false);
   // handling the progress bar
@@ -39,17 +44,6 @@ const Quiz = () => {
   // const [questionsArray, setQuestionsArray] = useState([]);
 
   const navigate = useNavigate();
-
-  //save randomQuestions[currQues].correct_answer, and selected to userQuizQuestions array
-  const saveUserQuizQuestions = () => {
-    const userQuizQuestion = {
-      question: randomQuestions[currQues].question,
-      correct_answer: randomQuestions[currQues].correct_answer,
-      selected_answer: selected,
-      read_more: randomQuestions[currQues].read_more,
-    };
-    setUserQuizQuestions([...userQuizQuestions, userQuizQuestion]);
-  };
 
   useEffect(() => {
     setChoices(
@@ -66,9 +60,11 @@ const Quiz = () => {
   useEffect(() => {
     setShowCode(randomQuestions[currQues].length > 1);
   }, [currQues]);
+  console.log("choices", choices);
 
   const handleSelected = (e, choice) => {
     setSelected(choice);
+
     setHighlightSelected(true);
   };
 
@@ -76,9 +72,9 @@ const Quiz = () => {
     if (duration === 0 && timerState) {
       setStepper(stepper + steps);
       setCurrQues(currQues + 1);
-      // setDuration(15);
+      setDuration(90);
       if (currQues + 1 === randomQuestions.length) {
-        navigate("/results");
+        navigate("/result");
       }
     } else if (timerState) {
       const timer = setInterval(() => {
@@ -98,7 +94,6 @@ const Quiz = () => {
   const handleClick = () => {
     setTimerState(true);
     setDuration(90);
-    saveUserQuizQuestions();
 
     if (currQues < 15) {
       if (selected === correct) {
@@ -106,10 +101,11 @@ const Quiz = () => {
       }
       setStepper(stepper + steps);
       setCurrQues(currQues + 1);
+      setHighlightSelected(false);
       setSelected("");
 
       if (currQues === randomQuestions.length - 1) {
-        navigate("/results");
+        navigate("/result");
         setTimerState(false);
       }
     }
@@ -125,8 +121,6 @@ const Quiz = () => {
   useEffect(() => {
     setWarning(duration <= 10 ? true : false);
   }, [duration]);
-
-  console.log("userQuizQuestions", userQuizQuestions);
 
   return (
     <Container classes="max-w-xxl min-w-full divide-y">

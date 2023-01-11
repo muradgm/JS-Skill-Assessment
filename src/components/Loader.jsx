@@ -2,12 +2,9 @@ import { useEffect, useContext, useRef } from "react";
 import { DataContext } from "../context/DataContext";
 import { useNavigate } from "react-router-dom";
 import { Container, Section, Header } from "../components/index.js";
-import { MdClose } from "react-icons/md";
-
 import gsap from "gsap";
-import Modal from "./Modal";
 
-const Loader = ({ reRunTest, setReRunTest }) => {
+const Loader = ({ loadingPage, setLoadingPage }) => {
   const { setTimerState, setDuration } = useContext(DataContext);
 
   const navigate = useNavigate();
@@ -30,55 +27,53 @@ const Loader = ({ reRunTest, setReRunTest }) => {
         stagger: 2,
         ease: "power4.out",
         onComplete: () => {
-          // setTimerState(true);
-          // setDuration(90);
-          // navigate("/quiz");
-          // setReRunTest(false);
+          setTimerState(true);
+          setDuration(90);
+          navigate("/quiz");
+          setLoadingPage(false);
         },
       },
       1.5
     );
-  }, [setReRunTest, setTimerState, setDuration, navigate]);
+  }, [setLoadingPage, setTimerState, setDuration, navigate]);
 
   return (
     <>
-      {reRunTest ? (
-        <Modal>
-          <Container classes="relative w-full flex flex-col m-auto h-2/4 items-center ">
-            {/* <Section classes="pt-4 w-full">
-              <Header />
-            </Section> */}
-            {/*body*/}
-            <button
-              className="fixed top-0 right-0 p-6"
-              onClick={() => {
-                setReRunTest(false);
-              }}
-            >
-              <MdClose className="text-3xl" />
-            </button>
-            <Section classes="relative flex-col justify-center w-full h-full">
-              <div
-                ref={parentRef}
-                className="w-full h-full flex di justify-center items-center"
-              >
-                {[
-                  "Preparing new set of questions",
-                  "Read the questions carefully",
-                  "Choose the most appropriate answer",
-                  "and Remember, you have 1.5 minutes per question",
-                ].map((text, idx) => (
-                  <p
-                    key={idx}
-                    className="absolute invisible my-4 text-slate-500 text-2xl leading-relaxed"
+      {loadingPage ? (
+        <>
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+            <div className="relative w-full h-full flex justify-center">
+              {/*content*/}
+              <Container classes="relative w-8/12 flex flex-col m-auto h-2/4 items-center justify-between">
+                <Section classes="pt-4 w-full">
+                  <Header />
+                </Section>
+                {/*body*/}
+                <Section classes="relative flex justify-center w-full h-full">
+                  <div
+                    ref={parentRef}
+                    className="absolute w-full flex justify-center"
                   >
-                    {text}
-                  </p>
-                ))}
-              </div>
-            </Section>
-          </Container>
-        </Modal>
+                    {[
+                      "Preparing new set of questions",
+                      "Read the questions carefully",
+                      "Choose the most appropriate answer",
+                      "and Remember, you have 1.5 minutes per question",
+                    ].map((text, idx) => (
+                      <p
+                        key={idx}
+                        className="absolute invisible my-4 text-slate-500 text-2xl leading-relaxed"
+                      >
+                        {text}
+                      </p>
+                    ))}
+                  </div>
+                </Section>
+              </Container>
+            </div>
+          </div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+        </>
       ) : null}
     </>
   );

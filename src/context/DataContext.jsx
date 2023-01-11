@@ -9,7 +9,17 @@ export const DataContextProvider = ({ children }) => {
     email: "",
   });
 
+  const [report, setReport] = useState({
+    idx: 0,
+    question: [],
+    incorrect_answer: [],
+    correct_answer: [],
+    user_answer: [],
+    resources: [],
+  });
+
   const [score, setScore] = useState(0);
+  const [selected, setSelected] = useState([]);
 
   // an array of 15 random questions sliced from the questions array in test.js
   const [randomQuestions, setRandomQuestions] = useState([]);
@@ -19,8 +29,6 @@ export const DataContextProvider = ({ children }) => {
   //question countdown timer states
   const [duration, setDuration] = useState(null);
   const [timerState, setTimerState] = useState(false);
-
-  const [userQuizQuestions, setUserQuizQuestions] = useState([]); // questions is an array of objects
 
   // question countdown timer that sets the duration to 90 seconds and runs a setInterval function to handle the countdown to 0
 
@@ -38,14 +46,6 @@ export const DataContextProvider = ({ children }) => {
   useEffect(() => {
     setRandomQuestions(shuffleQuestions(questions).slice(0, 15));
   }, []);
-
-  const userName = () => {
-    let name = user.name
-      ? user.name[0].toUpperCase() + user.name.slice(1)
-      : "User";
-
-    return name;
-  };
 
   // console.log("randomQuestions", randomQuestions);
 
@@ -67,9 +67,10 @@ export const DataContextProvider = ({ children }) => {
         minutes,
         seconds,
         shuffleQuestions,
-        userQuizQuestions,
-        setUserQuizQuestions,
-        userName,
+        selected,
+        setSelected,
+        report,
+        setReport,
       }}
     >
       {children}

@@ -2,16 +2,14 @@ import { Routes, Route } from "react-router-dom";
 import Quiz from "./pages/Quiz";
 import Results from "./pages/Results";
 import Main from "./pages/Main";
-import Questions from "./components/Questions";
 
 function App() {
   return (
-    <div className="box-border flex justify-center items-center h-full max-w-3xl lg:w-full lg:py-16">
+    <div className=" app box-border flex justify-center items-center min-h-screen max-w-4xl mx-auto">
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/quiz" element={<Quiz />} />
-        <Route exact path="/results" element={<Results />} />
-        <Route exact path="/results/analyze" element={<Questions />} />
+        <Route exact path="/result" element={<Results />} />
 
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>

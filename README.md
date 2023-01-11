@@ -1,38 +1,68 @@
-<!---
-https://en.wikibooks.org/wiki/LaTeX/Fonts
--->
-$$\textnormal{\color{red}\Huge\textbf{ WORK \ IN \ PROGRESS!} }$$  
-<br />
+# JS Test Simulator
 
-## JavaScript Skill Assessment [Linkedin version]
+A simple React project that simulates a multiple-choice JavaScript test. The project was created to help people prepare for the LinkedIn JavaScript test. It makes use of React, react-router-dom, and Tailwind CSS for styling.
 
-> __Note__ The purpose of this clone is to help you prepare for the Linkedin skill assessment.
+![Screenshot - Home Page](./src/assets/Javascript%20test%20Simulator%20-%20home%20page.png)
+![Screenshot - Questions Page](./src/assets/Javascript%20test%20Simulator%20-%20Questions.png)
+![Screenshot - Results Page](./src/assets/Javascript%20test%20Simulator%20-%20Results%20Page.png)
+## Features
 
-As i was preparing for the linkedin JS skill assessment using the help of the [linkedin-skill-assessments-quizzes](https://ebazhanov.github.io/linkedin-skill-assessments-quizzes/javascript/javascript-quiz.html) , i thought maybe i could do something to practice the questions instead of just reading through the md file
+- Count-down timer for each question
+- Auto-skip if time is up and no answer is selected
+- 4 choices per question, with only one correct answer
+- Test results page with option to retake the test
+- Comparison of user answers against correct answers
+- External resources links for each question
+- Send test results to email
 
-#### Features:
-- enter name to enable start quiz button.
-- 15 multiple choice questions.
-- questions randomly chosen from 140 questions.
-- countdown: 90 seconds countdown per question, if time is up, question is skipped and no points added to the score.
-- on test submit, you are directed to the results page to see test score and.
-- in the results page, you can choose to either take the assessment again or see the test analysis, where you made mistakes, see correct answers and follow links to read more about the question topic.
+## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-#### Tools used:
+### Prerequisites
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+
+```js
+git clone <https://github.com/your-username/js-test-simulator.git>
 ```
-"react": "^18.2.0",
-"react-icons": "^4.4.0",
-"react-router-dom": "^6.3.0",
-"tailwindcss": "^3.1.8"
-"gsap": "^3.11.1",
+
+1. Install the dependencies
+
+```js
+npm install
 ```
 
-#### Next Step:
-adding more languages and frameworks:
-- HTML
-- CSS
-- React
-- MongoDB
-- TypeScript
-- Nodejs
+1. Start the development server
+
+```js
+npm start
+```
+
+The project will be running on <http://localhost:3000>
+
+## Built With
+
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+- [React Router](https://reactrouter.com/) - A routing library for React
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+
+## Future Plans
+
+- Adding more questions to the JavaScript test simulator.
+- Expanding the simulator to include tests for React, HTML, CSS, MongoDB, NodeJS, and TypeScript.
+
+## Notes
+
+- Please keep in mind that the test questions and answers are for simulation only, so it's not the actual test questions.
+- Please check the 'send me my score' and add your email to receive the test questions and answers
+
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).

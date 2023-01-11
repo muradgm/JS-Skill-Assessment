@@ -7,12 +7,8 @@ const questions = [
     incorrect_answer: ["<>", "~", "==!"],
     // correct_answer: 4,
     correct_answer: "!=",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_operators.asp",
-        reference: "JavaScript Comparison Operators",
-      },
-    ],
+    read_more:
+      "Reference Javascript Comparison Operators\n        (https://www.w3schools.com/js/js_operators.asp)",
   },
   {
     id: 2,
@@ -25,12 +21,8 @@ const questions = [
     // correct_answer: 2,
     correct_answer:
       "A for statement is generic, but a forEach statement can be used only with an array.",
-    read_more: [
-      {
-        link: "https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/",
-        reference: "Differences between forEach and for loop",
-      },
-    ],
+    read_more:
+      "Reference Differences between forEach and for loop\n        (https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)",
   },
   {
     id: 3,
@@ -41,12 +33,8 @@ const questions = [
     incorrect_answer: ["addTax = 50;", "return addTax 50;", "addTax 50;"],
     // correct_answer: 3,
     correct_answer: "addTax(50);",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_functions.asp",
-        reference: "Functions in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference functions in javascript\n        (https://www.w3schools.com/js/js_functions.asp)",
   },
   {
     id: 4,
@@ -56,12 +44,8 @@ const questions = [
     incorrect_answer: ["let 100 = rate;", "100 = let rate;", "rate = 100;"],
     // correct_answer: 1,
     correct_answer: "let rate = 100;",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_operators.asp",
-        reference: "JavaScript Assignment Operators",
-      },
-    ],
+    read_more:
+      "Reference Javascript Assignment operators\n        (https://www.w3schools.com/js/js_operators.asp)",
   },
   {
     id: 5,
@@ -75,13 +59,8 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "var student = new Person();",
-    //! no reference
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes",
-        reference: "JavaScript Classes",
-      },
-    ],
+    read_more:
+      "Reference\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)",
   },
   {
     id: 6,
@@ -96,12 +75,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "immediately",
-    read_more: [
-      {
-        link: "https://stackoverflow.com/a/2035662/15067394",
-        reference: "JavaScript is synchronous and single threaded",
-      },
-    ],
+    read_more:
+      "Reference Javascript is synchronous and single threaded\n        (https://stackoverflow.com/a/2035662/15067394)",
   },
   {
     id: 7,
@@ -116,12 +91,8 @@ const questions = [
     ],
     // correct_answer: 3,
     correct_answer: "Animal.belly[0]",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static",
-        reference: "JavaScript Class static Keyword",
-      },
-    ],
+    read_more:
+      "Reference Javascript Class static Keyword\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)",
   },
   {
     id: 8,
@@ -137,12 +108,8 @@ const questions = [
     // correct_answer: 3,
     correct_answer:
       "for (var i = 1; i <= 4; i++) {(function (j) {setTimeout(function () {console.log(j);}, j * 1000);})(i);}",
-    read_more: [
-      {
-        link: "https://www.javascripttutorial.net/javascript-anonymous-functions/",
-        reference: "Immediately Invoked Anonymous Functions",
-      },
-    ],
+    read_more:
+      "Reference setTimeout:\n        (https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)Reference immediately invoked anonymous functions:\n        (https://www.javascripttutorial.net/javascript-anonymous-functions/)",
   },
   {
     id: 9,
@@ -154,13 +121,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "It returns a reference to a variable in its parent scope.",
-    //! no reference
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures",
-        reference: "JavaScript Closures",
-      },
-    ],
+    read_more:
+      "Reference:\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)",
   },
   {
     id: 10,
@@ -173,12 +135,8 @@ const questions = [
     // correct_answer: 1,
     correct_answer:
       "let discountPrice = function (price) {return price * 0.85;};",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_functions.asp",
-        reference: "Defining JavaScript Functions",
-      },
-    ],
+    read_more:
+      "Reference defining javascript functions\n        (https://www.w3schools.com/js/js_functions.asp)",
   },
   {
     id: 11,
@@ -189,12 +147,8 @@ const questions = [
     incorrect_answer: ["Storm()", "undefined", "rain"],
     // correct_answer: 4,
     correct_answer: "snow",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain",
-        reference: "Prototype chain",
-      },
-    ],
+    read_more:
+      "Reference prototype chain\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)",
   },
   {
     id: 12,
@@ -208,16 +162,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "/dd:dd:dd/",
-    read_more: [
-      {
-        link: "https://regexone.com/lesson/repeating_characters",
-        reference: "Repeating characters",
-      },
-      {
-        link: "https://regexone.com/lesson/kleene_operators",
-        reference: "Kleene operators",
-      },
-    ],
+    read_more:
+      "Repeating characters\n        (https://regexone.com/lesson/repeating_characters)Kleene operators(https://regexone.com/lesson/kleene_operators)",
   },
   {
     id: 13,
@@ -228,12 +174,8 @@ const questions = [
     incorrect_answer: ["undefined", "window", "function"],
     // correct_answer: 3,
     correct_answer: "{desc: 'logger'}",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes",
-        reference: "JavaScript Classes",
-      },
-    ],
+    read_more:
+      "Reference javascript classes\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)",
   },
   {
     id: 14,
@@ -244,12 +186,8 @@ const questions = [
     incorrect_answer: ["roadTypes.2", "roadTypes[3]", "roadTypes.3"],
     // correct_answer: 4,
     correct_answer: "roadTypes[2]",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_arrays.asp",
-        reference: "Accessing JavaScript Arrays",
-      },
-    ],
+    read_more:
+      "Reference accessing javascript arrays\n        (https://www.w3schools.com/js/js_arrays.asp)",
   },
   {
     id: 15,
@@ -260,12 +198,8 @@ const questions = [
     incorrect_answer: ["float", "value", "integer"],
     // correct_answer: 3,
     correct_answer: "number",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures",
-        reference: "JavaScript data types",
-      },
-    ],
+    read_more:
+      "Reference javascript data types\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)",
   },
   {
     id: 16,
@@ -275,12 +209,8 @@ const questions = [
     incorrect_answer: ["self", "object", "source"],
     // correct_answer: 3,
     correct_answer: "target",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/jsref/dom_obj_event.asp",
-        reference: "events",
-      },
-    ],
+    read_more:
+      "Reference DOM events\n        (https://www.w3schools.com/jsref/dom_obj_event.asp)",
   },
   {
     id: 17,
@@ -295,12 +225,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "throw('One or both parameters are not numbers')",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw",
-        reference: "JavaScript throw",
-      },
-    ],
+    read_more:
+      "Reference javascript throw\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)",
   },
   {
     id: 18,
@@ -312,12 +238,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "JSON.parse()",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_json_parse.asp",
-        reference: "Convert JSON to JavaScript Object",
-      },
-    ],
+    read_more:
+      "Reference convert json to javascript object:\n        (https://www.w3schools.com/js/js_json_parse.asp)",
   },
   {
     id: 19,
@@ -330,12 +252,8 @@ const questions = [
     // correct_answer: 2,
     correct_answer:
       "When you want your code to choose between multiple options.",
-    read_more: [
-      {
-        link: "https://www.javascript.com/learn/conditionals",
-        reference: "JavaScript conditionals",
-      },
-    ],
+    read_more:
+      "Reference javascript conditionals\n        (https://www.javascript.com/learn/conditionals)",
   },
   {
     id: 20,
@@ -346,12 +264,8 @@ const questions = [
     incorrect_answer: ["1 2 3 4 5", "1 2 3 4", "0 1 2 3 4 5"],
     // correct_answer: 3,
     correct_answer: "0 1 2 3 4",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_loop_for.asp",
-        reference: "JavaScript For...Loops",
-      },
-    ],
+    read_more:
+      "Reference javascript for loops\n        (https://www.w3schools.com/js/js_loop_for.asp)",
   },
   {
     id: 21,
@@ -361,12 +275,8 @@ const questions = [
     incorrect_answer: ["Object.get()", "Object.loop()", "Object.each()"],
     // correct_answer: 4,
     correct_answer: "Object.keys()",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods",
-        reference: "JavaScript Object Static Methods",
-      },
-    ],
+    read_more:
+      "Reference javascript object static methods\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods)",
   },
   {
     id: 22,
@@ -377,8 +287,7 @@ const questions = [
     incorrect_answer: ["3", "4", "100"],
     // correct_answer: 1,
     correct_answer: "101",
-    //! read more about js.length and numbers
-    read_more: [{ link: "", reference: "" }],
+    read_more: "",
   },
   {
     id: 23,
@@ -392,17 +301,13 @@ const questions = [
     ],
     /**
      ***Explanation:** `Map.prototype.size returns the number of elements in a Map, whereas Object does not have a built-in method to return its size.`
-      [Reference map methods javascript]https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+      [Reference map methods javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
      */
     // correct_answer: 2,
     correct_answer:
       "You can count the records in a Map with a single method call.",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-        reference: "JavaScript Map Methods",
-      },
-    ],
+    read_more:
+      "Reference map methods javascript\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)",
   },
   {
     id: 24,
@@ -413,12 +318,8 @@ const questions = [
     incorrect_answer: ["pie", "The code will throw an error.", "undefined"],
     // correct_answer: 3,
     correct_answer: "pudding",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects",
-        reference: "Working with Objects",
-      },
-    ],
+    read_more:
+      "Reference working with js objects\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
   },
   {
     id: 25,
@@ -426,12 +327,8 @@ const questions = [
     incorrect_answer: ["ReferenceError", "True", "false"],
     // correct_answer: 3,
     correct_answer: "0",
-    read_more: [
-      {
-        link: "https://ntgard.medium.com/https-medium-com-ntgard-boolean-logic-in-javascript-part-1-3371af974f19",
-        reference: "Boolean Logic",
-      },
-    ],
+    read_more:
+      "Reference boolean logic:\n        (https://ntgard.medium.com/https-medium-com-ntgard-boolean-logic-in-javascript-part-1-3371af974f19)",
   },
   {
     id: 26,
@@ -441,12 +338,8 @@ const questions = [
     incorrect_answer: ["++", "--", "=="],
     // correct_answer: 4,
     correct_answer: "||",
-    read_more: [
-      {
-        link: "https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c",
-        reference: "JavaScript Short Circuit Evaluation",
-      },
-    ],
+    read_more:
+      "Reference short circuit javascript\n        (https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)",
   },
   {
     id: 27,
@@ -460,12 +353,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "Student.prototype = new Person();",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_Prototype_chain",
-        reference: "JavaScript Prototype Object",
-      },
-    ],
+    read_more:
+      "Reference prototype object js\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)",
   },
   {
     id: 28,
@@ -480,12 +369,8 @@ const questions = [
     // correct_answer: 2,
     correct_answer:
       "to tell parsers to enforce all JavaScript syntax rules when processing your code",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_strict.asp",
-        reference: "What is useStrict in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference what is use strict in js\n        (https://www.w3schools.com/js/js_strict.asp)",
   },
   {
     id: 29,
@@ -495,12 +380,8 @@ const questions = [
     incorrect_answer: ["all of them", "const", "let"],
     // correct_answer: 3,
     correct_answer: "var",
-    read_more: [
-      {
-        link: "https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/",
-        reference: "var vs let vs const",
-      },
-    ],
+    read_more:
+      "Reference var vs let vs const in js\n        (https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)",
   },
   {
     id: 30,
@@ -508,12 +389,8 @@ const questions = [
     incorrect_answer: ["Boolean(0)", "Boolean('')", "Boolean(NaN)"],
     // correct_answer: 4,
     correct_answer: "Boolean('false')",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-        reference: "Boolean of a String",
-      },
-    ],
+    read_more:
+      "Reference boolean of a string\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)",
   },
   {
     id: 31,
@@ -521,12 +398,8 @@ const questions = [
     incorrect_answer: ["this", "catch", "function"],
     // correct_answer: 4,
     correct_answer: "array",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_reserved.asp",
-        reference: "JavaScript Reserved Words",
-      },
-    ],
+    read_more:
+      "Reference js reserved words\n        (https://www.w3schools.com/js/js_reserved.asp)",
   },
   {
     id: 32,
@@ -536,12 +409,8 @@ const questions = [
     incorrect_answer: ["args", "argsArray", "argumentsList"],
     // correct_answer: 1,
     correct_answer: "Arguments",
-    read_more: [
-      {
-        link: "https://www.codeproject.com/Tips/1221966/JavaScript-Functions-Implicit-Parameters",
-        reference: "JavaScript Functions Implicit Parameters",
-      },
-    ],
+    read_more:
+      "Reference implicit js parameters for functions\n        (https://www.codeproject.com/Tips/1221966/JavaScript-Functions-Implicit-Parameters)",
   },
   {
     id: 33,
@@ -552,12 +421,8 @@ const questions = [
     incorrect_answer: ["x.get('Y')", "x.Y()", "x.get().Y"],
     // correct_answer: 2,
     correct_answer: "x.Y",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get",
-        reference: "Getters",
-      },
-    ],
+    read_more:
+      "Reference getters\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)",
   },
   {
     id: 34,
@@ -572,12 +437,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "30, ReferenceError",
-    read_more: [
-      {
-        link: "https://stackoverflow.com/question/56318460/cannot-access-variable-name-before-initialization",
-        reference: "Accessing before Initialization",
-      },
-    ],
+    read_more:
+      "Reference accessing before initialization\n        (https://stackoverflow.com/question/56318460/cannot-access-variable-name-before-initialization)",
   },
   {
     id: 35,
@@ -586,7 +447,7 @@ const questions = [
     ],
     /**
      **Explanation:** Records in an object can be retrieved using their key which can be any given value (e.g. an employee ID, a city name, etc), whereas to retrieve a record from an array we need to know its index.
-     [Reference efficiency of lookups]https://stackoverflow.com/question/17295056/array-vs-object-efficiency-in-javascript)
+     [Reference efficiency of lookups](https://stackoverflow.com/question/17295056/array-vs-object-efficiency-in-javascript)
      */
     incorrect_answer: [
       "Objects are more efficient in terms of storage.",
@@ -596,12 +457,8 @@ const questions = [
     // correct_answer: 3,
     correct_answer:
       "Most operations involve looking up a record, and objects can do that better than arrays.",
-    read_more: [
-      {
-        link: "https://stackoverflow.com/question/17295056/array-vs-object-efficiency-in-javascript",
-        reference: "Efficiency of Lookups",
-      },
-    ],
+    read_more:
+      "Reference efficiency of lookups\n        (https://stackoverflow.com/question/17295056/array-vs-object-efficiency-in-javascript)",
   },
   {
     id: 36,
@@ -615,12 +472,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "It can be used only for external JavaScript code.",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/tags/att_script_async.asp",
-        reference: "Async attribute for html",
-      },
-    ],
+    read_more:
+      "Reference async attribute for html\n        (https://www.w3schools.com/tags/att_script_async.asp)",
   },
   {
     id: 37,
@@ -634,12 +487,8 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "import _ from 'lodash';",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
-        reference: "How to import library in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference how to import library in js\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)",
   },
   {
     id: 38,
@@ -647,12 +496,8 @@ const questions = [
     incorrect_answer: ["True", "undefined", "[]"],
     // correct_answer: 4,
     correct_answer: "False",
-    read_more: [
-      {
-        link: "https://stackoverflow.com/question/30820611/why-doesnt-equality-check-work-with-arrays",
-        reference: "Arrays in JavaScript are objects",
-      },
-    ],
+    read_more:
+      "Reference arrays in js are objects\n        (https://stackoverflow.com/question/30820611/why-doesnt-equality-check-work-with-arrays)",
   },
   {
     id: 39,
@@ -666,12 +511,8 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "Generator function",
-    read_more: [
-      {
-        link: "https://www.guru99.com/node-js-generators-compare-callbacks.html#:~:text=Generators%20are%20function%20executions%20that,resumed%20at%20a%20later%20point.",
-        reference: "What are generators in Nodejs",
-      },
-    ],
+    read_more:
+      "Reference what are generators in nodejs\n        (https://www.guru99.com/node-js-generators-compare-callbacks.html#:~:text=Generators%20are%20function%20executions%20that,resumed%20at%20a%20later%20point.)",
   },
   {
     id: 40,
@@ -686,12 +527,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "1",
-    read_more: [
-      {
-        link: "https://javascript.info/closure",
-        reference: "Closures in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference closures in js / nested functions\n        (https://javascript.info/closure)",
   },
   {
     id: 41,
@@ -703,12 +540,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "Side effects are not allowed.",
-    read_more: [
-      {
-        link: "https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0",
-        reference: "Functional Programming",
-      },
-    ],
+    read_more:
+      "Reference functional programming\n        (https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)",
   },
   {
     id: 42,
@@ -723,13 +556,8 @@ const questions = [
     // correct_answer: 1,
     correct_answer:
       "You are calling a method named reduce on an object that's declared but has no value.",
-    read_more: [
-      {
-        link: "",
-        reference:
-          "You cannot invoke reduce on undefined object... It will throw (yourObject is not Defined...)",
-      },
-    ],
+    read_more:
+      "You cannot invoke reduce on undefined object... It will throw (yourObject is not Defined...)",
   },
   {
     id: 43,
@@ -740,12 +568,8 @@ const questions = [
     incorrect_answer: ["3", "0", "1"],
     // correct_answer: 2,
     correct_answer: "2",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/jsref/jsref_prototype_array.asp",
-        reference: "Array Prototype",
-      },
-    ],
+    read_more:
+      "Reference array prototype\n        (https://www.w3schools.com/jsref/jsref_prototype_array.asp)",
   },
   {
     id: 44,
@@ -753,12 +577,8 @@ const questions = [
     incorrect_answer: ["typeof", "delete", "void"],
     // correct_answer: 3,
     correct_answer: "instanceof",
-    read_more: [
-      {
-        link: "https://www.digitalocean.com/community/tutorials/javascript-unary-operators-simple-and-useful#:~:text=A%20unary%20operation%20is%20an,therefore%20their%20functionality%20is%20guaranteed.",
-        reference: "JavaScript unary operators",
-      },
-    ],
+    read_more:
+      "Reference js unary operators\n        (https://www.digitalocean.com/community/tutorials/javascript-unary-operators-simple-and-useful#:~:text=A%20unary%20operation%20is%20an,therefore%20their%20functionality%20is%20guaranteed.)",
   },
   {
     id: 45,
@@ -769,12 +589,8 @@ const questions = [
     incorrect_answer: ["conditional", "global", "function"],
     // correct_answer: 2,
     correct_answer: "block",
-    read_more: [
-      {
-        link: "https://josephcardillo.medium.com/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe",
-        reference: "Block vs Function scope",
-      },
-    ],
+    read_more:
+      "Reference block vs function scope\n        (https://josephcardillo.medium.com/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe)",
   },
   {
     id: 46,
@@ -785,12 +601,8 @@ const questions = [
     incorrect_answer: ["One", "undefined", "TRUE"],
     // correct_answer: 4,
     correct_answer: "Two",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
-        reference: "Conditional Operator",
-      },
-    ],
+    read_more:
+      "Reference ternary operator js\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)",
   },
   {
     id: 47,
@@ -798,12 +610,8 @@ const questions = [
     incorrect_answer: ["exception", "catch", "error"],
     // correct_answer: 1,
     correct_answer: "throw",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/jsref/jsref_throw.asp#:~:text=The%20throw%20statement%20throws%20(generates,to%20create%20a%20custom%20error.)",
-        reference: "Throwing errors in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference throwing errors in js\n        (<https://www.w3schools.com/jsref/jsref_throw.asp#:~:text=The%20throw%20statement%20throws%20(generates,to%20create%20a%20custom%20error.)>)",
   },
   {
     id: 48,
@@ -818,12 +626,8 @@ const questions = [
     // correct_answer: 4,
     correct_answer:
       "The defer attribute will asynchronously load the scripts in order.",
-    read_more: [
-      {
-        link: "https://www.digitalocean.com/community/tutorials/html-defer-async#:~:text=%3E-,Async%20vs%20Defer,order%20as%20they%20are%20called.",
-        reference: "Async vs defer",
-      },
-    ],
+    read_more:
+      "Reference async vs defer\n        (https://www.digitalocean.com/community/tutorials/html-defer-async#:~:text=%3E-,Async%20vs%20Defer,order%20as%20they%20are%20called.)",
   },
   {
     id: 49,
@@ -839,12 +643,8 @@ const questions = [
     // correct_answer: 1,
     correct_answer:
       "The condition in the ternary is using the assignment operator.",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
-        reference: "Conditional Operator",
-      },
-    ],
+    read_more:
+      "Reference ternary operator js\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)",
   },
   {
     id: 50,
@@ -859,12 +659,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "document.querySelector('.pull');",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
-        reference: "DOM querySelector",
-      },
-    ],
+    read_more:
+      "Reference query selector\n        (https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)",
   },
   {
     id: 51,
@@ -875,12 +671,8 @@ const questions = [
     incorrect_answer: ["true", "false", "0"],
     // correct_answer: 1,
     correct_answer: "10",
-    read_more: [
-      {
-        link: "https://www.javascript.com/learn/conditionals",
-        reference: "JavaScript Conditionals",
-      },
-    ],
+    read_more:
+      "Reference javascript conditionals\n        (https://www.javascript.com/learn/conditionals)",
   },
   {
     id: 52,
@@ -891,12 +683,8 @@ const questions = [
     incorrect_answer: ["10", "0", "undefined"],
     // correct_answer: 3,
     correct_answer: "ReferenceError",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures",
-        reference: "JavaScript Closures",
-      },
-    ],
+    read_more:
+      "Reference\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)",
   },
   {
     id: 53,
@@ -907,12 +695,8 @@ const questions = [
     incorrect_answer: ["undefined", "hello", "an error message"],
     // correct_answer: 3,
     correct_answer: "an object with a constructor property",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain",
-        reference: "JavaScript Prototypes",
-      },
-    ],
+    read_more:
+      "Reference prototypes\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)",
   },
   {
     id: 54,
@@ -922,12 +706,8 @@ const questions = [
     incorrect_answer: ["Object", "Array", "Map"],
     // correct_answer: 2,
     correct_answer: "Set",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-        reference: "JavaScript Sets",
-      },
-    ],
+    read_more:
+      "Reference javascript sets\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)",
   },
   {
     id: 55,
@@ -938,12 +718,8 @@ const questions = [
     incorrect_answer: ["1 then 1", "1 then undefined", "undefined then 1"],
     // correct_answer: 3,
     correct_answer: "undefined then undefined",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures",
-        reference: "JavaScript Closures",
-      },
-    ],
+    read_more:
+      "Reference\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)",
   },
   {
     id: 56,
@@ -958,12 +734,8 @@ const questions = [
     // correct_answer: 3,
     correct_answer:
       "forEach can be used only with an array, whereas for can be used with additional data types.",
-    read_more: [
-      {
-        link: "https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/",
-        reference: "Differences between forEach and for loop",
-      },
-    ],
+    read_more:
+      "Reference Differences between forEach and for loop\n        (https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)",
   },
   {
     id: 57,
@@ -973,12 +745,8 @@ const questions = [
     incorrect_answer: ["({})", "{ return {};}", "(({}))"],
     // correct_answer: 2,
     correct_answer: "{}",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
-        reference: "Arrow Functions",
-      },
-    ],
+    read_more:
+      "Reference arrow functions\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)",
   },
   {
     id: 58,
@@ -991,13 +759,8 @@ const questions = [
     // correct_answer: 1,
     correct_answer:
       "to start tasks that might take some time without blocking subsequent tasks from executing immediately",
-    read_more: [
-      {
-        link: "",
-        reference:
-          "To ensure that tasks further down in your code are not initiated until earlier tasks have completed you use the normal (synchronous) flow where each command is executed sequentially.Asynchronous code allows you to break this sequence: start a long running function (AJAX call to an external service) and continue running the rest of the code in parallel.",
-      },
-    ],
+    read_more:
+      "*EXPLANATION:** to ensure that tasks further down in your code are not initiated until earlier tasks have completed you use the normal (synchronous) flow where each command is executed sequentially.Asynchronous code allows you to break this sequence: start a long running function (AJAX call to an external service) and continue running the rest of the code in parallel.",
   },
   {
     id: 59,
@@ -1005,12 +768,8 @@ const questions = [
     incorrect_answer: ["[3] == [3]", "3 != '3'", "3 === '3'"],
     // correct_answer: 2,
     correct_answer: "3 == '3'",
-    read_more: [
-      {
-        link: "https://www.scaler.com/topics/boolean-in-javascript/",
-        reference: "Boolean in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference booleans\n        (https://www.scaler.com/topics/boolean-in-javascript/)",
   },
   {
     id: 60,
@@ -1018,12 +777,8 @@ const questions = [
     incorrect_answer: ["5thItem", "grand total", "function"],
     // correct_answer: 2,
     correct_answer: "firstName",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_conventions.asp",
-        reference: "JavaScript Coding Conventions",
-      },
-    ],
+    read_more:
+      "Reference coding conventions\n        (https://www.w3schools.com/js/js_conventions.asp)",
   },
   {
     id: 61,
@@ -1031,12 +786,8 @@ const questions = [
     incorrect_answer: ["cancel()", "stop()", "prevent()"],
     // correct_answer: 3,
     correct_answer: "preventDefault()",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
-        reference: "JavaScript events",
-      },
-    ],
+    read_more:
+      "Reference javascript events\n        (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)",
   },
   {
     id: 62,
@@ -1044,12 +795,8 @@ const questions = [
     incorrect_answer: ["attachNode()", "getNode()", "querySelector()"],
     // correct_answer: 4,
     correct_answer: "appendChild()",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild",
-        reference: "Node Interface",
-      },
-    ],
+    read_more:
+      "Reference Node interface\n        (https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)",
   },
   {
     id: 63,
@@ -1057,12 +804,8 @@ const questions = [
     incorrect_answer: ["break", "pass", "skip"],
     // correct_answer: 4,
     correct_answer: "continue",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_break.asp",
-        reference: "JavaScript Break Vs. Continue",
-      },
-    ],
+    read_more:
+      "Reference break vs continue\n        (https://www.w3schools.com/js/js_break.asp)",
   },
   {
     id: 64,
@@ -1070,12 +813,8 @@ const questions = [
     incorrect_answer: ["a, b => {return c;", "a, b => c", "{ a, b } => c"],
     // correct_answer: 1,
     correct_answer: "(a,b) => c",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
-        reference: "JavaScript Arrow Functions",
-      },
-    ],
+    read_more:
+      "Reference arrow functions\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)",
   },
   {
     id: 65,
@@ -1085,12 +824,8 @@ const questions = [
     incorrect_answer: ["generator function", "map", "proxy"],
     // correct_answer: 1,
     correct_answer: "class",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes",
-        reference: "Classes",
-      },
-    ],
+    read_more:
+      "Reference javascript classes\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)",
   },
   {
     id: 66,
@@ -1102,12 +837,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "// This is a comment",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_comments.asp",
-        reference: "Comments in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference comments in javascript\n        (https://www.w3schools.com/js/js_comments.asp)",
   },
   {
     id: 67,
@@ -1117,12 +848,8 @@ const questions = [
     incorrect_answer: ["SystemError", "SyntaxError", "LogicError"],
     // correct_answer: 1,
     correct_answer: "TypeError",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/error",
-        reference: "JavaScript Errors",
-      },
-    ],
+    read_more:
+      "Reference javascript errors\n        (https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/error)",
   },
   {
     id: 68,
@@ -1132,12 +859,8 @@ const questions = [
     incorrect_answer: ["create()", "new()", "init()"],
     // correct_answer: 3,
     correct_answer: "constructor()",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor",
-        reference: "JavaScript Constructor",
-      },
-    ],
+    read_more:
+      "Reference javascript constructors\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)",
   },
   {
     id: 69,
@@ -1148,12 +871,8 @@ const questions = [
     incorrect_answer: ["4", "10", "5"],
     // correct_answer: 3,
     correct_answer: "6",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment",
-        reference: "JavaScript Increment Operator ++x vs x++",
-      },
-    ],
+    read_more:
+      "Reference ++x vs x++\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment)",
   },
   {
     id: 70,
@@ -1168,12 +887,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "e.preventDefault();",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault",
-        reference: "JavaScript events",
-      },
-    ],
+    read_more:
+      "Reference events in javascript\n        (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)",
   },
   {
     id: 71,
@@ -1187,12 +902,8 @@ const questions = [
     ],
     // correct_answer: 3,
     correct_answer: "(function() { console.log('lorem ipsum'); })();",
-    read_more: [
-      {
-        link: "https://javascript.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174",
-        reference: "What is an Immediately Invoked Function Expression",
-      },
-    ],
+    read_more:
+      "Reference what is an Immediately Invoked Function Expression\n        (https://javascript.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174)",
   },
   {
     id: 72,
@@ -1204,12 +915,8 @@ const questions = [
     ],
     // correct_answer: 3,
     correct_answer: "Document.querySelectorAll('img')",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
-        reference: "DOM querySelector",
-      },
-    ],
+    read_more:
+      "Reference query selector\n        (https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)",
   },
   {
     id: 73,
@@ -1222,12 +929,8 @@ const questions = [
     // correct_answer: 2,
     correct_answer:
       "To start tasks that might take some time without blocking subsequent tasks from executing immediately",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function",
-        reference: "Async Function",
-      },
-    ],
+    read_more:
+      "Reference async function\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)",
   },
   {
     id: 74,
@@ -1237,12 +940,8 @@ const questions = [
     incorrect_answer: ["DELETE", "PATCH", "POST"],
     // correct_answer: 2,
     correct_answer: "GET",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods",
-        reference: "Http Methods",
-      },
-    ],
+    read_more:
+      "Reference http methods\n        (https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)",
   },
   {
     id: 75,
@@ -1252,12 +951,8 @@ const questions = [
     incorrect_answer: ["blur", "hover", "enter"],
     // correct_answer: 1,
     correct_answer: "focus",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/Events",
-        reference: "JavaScript events",
-      },
-    ],
+    read_more:
+      "Reference javascript events\n        (https://developer.mozilla.org/en-US/docs/Web/Events)",
   },
   {
     id: 76,
@@ -1268,12 +963,8 @@ const questions = [
     incorrect_answer: ["function", "undefined", "Function.prototype"],
     // correct_answer: 4,
     correct_answer: "window",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_window.asp",
-        reference: "What is the JavaScript Window",
-      },
-    ],
+    read_more:
+      "Reference what is the javascript window\n        (https://www.w3schools.com/js/js_window.asp)",
   },
   {
     id: 77,
@@ -1289,15 +980,8 @@ const questions = [
     // correct_answer: 1,
     correct_answer:
       "class Greeting extends React.Component { render() { return <h1>Hello {this.props.name}!</h1>; } }",
-    //! get a link
-    read_more: [
-      {
-        link: "",
-        reference: "Functional Component vs Class Component in React",
-      },
-    ],
+    read_more: "",
   },
-
   {
     id: 78,
     question: [
@@ -1307,12 +991,8 @@ const questions = [
     incorrect_answer: ["componentWillUnmount", "componentDidUpdate", "render"],
     // correct_answer: 4,
     correct_answer: "componentDidMount",
-    read_more: [
-      {
-        link: "https://reactjs.org/docs/react-component.html",
-        reference: "React Lifecycle Methods",
-      },
-    ],
+    read_more:
+      "Reference react lifecycle methods:\n        (https://reactjs.org/docs/react-component.html)",
   },
   {
     id: 79,
@@ -1323,12 +1003,8 @@ const questions = [
     incorrect_answer: ["ReferenceError: obj is not defined", "{}", "null"],
     // correct_answer: 3,
     correct_answer: "undefined",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects",
-        reference: "Working with Objects",
-      },
-    ],
+    read_more:
+      "Reference working with objects:\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
   },
   {
     id: 80,
@@ -1343,12 +1019,8 @@ const questions = [
     ],
     // correct_answer: 3,
     correct_answer: "TaxCalculator.calculate(50);",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_functions.asp",
-        reference: "Functions in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference functions in javascript:\n        (https://www.w3schools.com/js/js_functions.asp)",
   },
   {
     id: 81,
@@ -1363,32 +1035,24 @@ const questions = [
     ],
     // correct_answer: 3,
     correct_answer: "Functions cannot be declared as properties of objects.",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_functions.asp",
-        reference: "Functions in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference functions in javascript:\n        (https://www.w3schools.com/js/js_functions.asp)",
   },
   {
     id: 82,
     question: [
       "What will be logged to the console?",
-      "console.log('I');\n        setTimeout(() => {\n        console.log('love');\n        }, 0);\n        console.log('JavaScript!');",
+      "console.log('I');\n        setTimeout(() => {\n        console.log('love');\n        }, 0);\n        console.log('Javascript!');",
     ],
     incorrect_answer: [
-      "plaintextloveJavaScript!",
+      "plaintextloveJavascript!",
       "The output may change with each execution of code and cannot be determined.",
-      "IloveJavaScript!",
+      "IloveJavascript!",
     ],
     // correct_answer: 1,
-    correct_answer: "plaintextIJavaScript!love",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout#reasons_for_delays_longer_than_specified",
-        reference: "setTimeOut, especially see the 'late timeouts' section!",
-      },
-    ],
+    correct_answer: "plaintextIJavascript!love",
+    read_more:
+      "Reference - especially see the 'late timeouts' section:\n        (https://developer.mozilla.org/en-US/docs/Web/API/setTimeout#reasons_for_delays_longer_than_specified)",
   },
   {
     id: 83,
@@ -1403,12 +1067,8 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "1",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment",
-        reference: "Array Deconstruction",
-      },
-    ],
+    read_more:
+      "Reference array deconstruction:\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)",
   },
   {
     id: 84,
@@ -1423,12 +1083,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "delete foo.name;",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects",
-        reference: "Working with Objects",
-      },
-    ],
+    read_more:
+      "Reference working with objects:\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
   },
   {
     id: 85,
@@ -1443,12 +1099,8 @@ const questions = [
     // correct_answer: 3,
     correct_answer:
       "The map() methods returns a new array with a transformation applied on each item in the original array, whereas the `forEach()` method iterates through an array with no return value.",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-        reference: "JavaScript Map Method",
-      },
-    ],
+    read_more:
+      "Reference map(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)",
   },
   {
     id: 86,
@@ -1459,14 +1111,8 @@ const questions = [
     incorrect_answer: ["overloading", "closure", "overriding"],
     // correct_answer: 3,
     correct_answer: "currying",
-    read_more: [
-      {
-        link: "https://javascript.info/currying-partials",
-        reference: "Currying",
-      },
-    ],
+    read_more: "Reference currying(https://javascript.info/currying-partials)",
   },
-
   {
     id: 87,
     question: ["Which tag pair is used in HTML to embed JavaScript?"],
@@ -1477,12 +1123,8 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "<script></script>",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/tags/tag_script.asp",
-        reference: "how to add JavaScript to html file",
-      },
-    ],
+    read_more:
+      "Reference add js to html file(https://www.w3schools.com/tags/tag_script.asp)",
   },
   {
     id: 88,
@@ -1492,12 +1134,8 @@ const questions = [
     incorrect_answer: ["Security-Mode", "Different-Origin", "Same-Origin"],
     // correct_answer: 2,
     correct_answer: "Access-Control-Allow-Origin",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",
-        reference: "CORS - Cross-Origin Resource Sharing",
-      },
-    ],
+    read_more:
+      "Reference Cross-Origin Resource Sharing(https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)",
   },
   {
     id: 89,
@@ -1508,12 +1146,8 @@ const questions = [
     incorrect_answer: ["window", "undefined", "function"],
     // correct_answer: 4,
     correct_answer: "{desc: 'logger'}",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_strict.asp",
-        reference: "Strict in JavaScript Classes",
-      },
-    ],
+    read_more:
+      "Reference strict in javascript classes(https://www.w3schools.com/js/js_strict.asp)",
   },
   {
     id: 90,
@@ -1528,12 +1162,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: '["Cerrado", "Congo"]',
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-        reference: "JavaScript Array Method",
-      },
-    ],
+    read_more:
+      "Reference array methods(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)",
   },
   {
     id: 91,
@@ -1548,12 +1178,8 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "const [one,two,three,four,five]=numbers",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment",
-        reference: "Array destructuring",
-      },
-    ],
+    read_more:
+      "Reference array destructuring(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)",
   },
   {
     id: 92,
@@ -1568,12 +1194,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "0 2",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax",
-        reference: "Spread syntax ES6",
-      },
-    ],
+    read_more:
+      "Reference spread syntax es6(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)",
   },
   {
     id: 93,
@@ -1588,12 +1210,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "animals.reverse();",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse",
-        reference: "JavaScript Array Reverse",
-      },
-    ],
+    read_more:
+      "Reference Javascript Array Reverse(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)",
   },
   {
     id: 94,
@@ -1608,12 +1226,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "let vowels = 'aeiou';",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_arrays.asp",
-        reference: "Working with Arrays",
-      },
-    ],
+    read_more:
+      "Reference working with arrays(https://www.w3schools.com/js/js_arrays.asp)",
   },
   {
     id: 95,
@@ -1624,12 +1238,8 @@ const questions = [
     incorrect_answer: ["undefined", "One", "true"],
     // correct_answer: 4,
     correct_answer: "Two",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
-        reference: "Ternary operator in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference ternary operator js(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)",
   },
   {
     id: 96,
@@ -1640,8 +1250,7 @@ const questions = [
     incorrect_answer: ["matrix[1[2]]", "matrix[1,2]", "matrix[1][2]"],
     // correct_answer: 2,
     correct_answer: "matrix[1][1]",
-    //! link about multidimensional arrays
-    read_more: [{ link: "", reference: "" }],
+    read_more: "",
   },
   {
     id: 97,
@@ -1656,12 +1265,8 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "It adds 'Lizard' to the start of the animals array.",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_arrays.asp",
-        reference: "Working with Arrays",
-      },
-    ],
+    read_more:
+      "Reference working with arrays(https://www.w3schools.com/js/js_arrays.asp)",
   },
   {
     id: 98,
@@ -1672,12 +1277,8 @@ const questions = [
     incorrect_answer: ["12", "66", "633"],
     // correct_answer: 1,
     correct_answer: "93",
-    read_more: [
-      {
-        link: "https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/",
-        reference: "JavaScript Type Coercion",
-      },
-    ],
+    read_more:
+      "Reference type coercion(https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)",
   },
   {
     id: 99,
@@ -1687,12 +1288,8 @@ const questions = [
     incorrect_answer: ["else", "when", "if"],
     // correct_answer: 4,
     correct_answer: "switch",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch",
-        reference: "Switch Statements",
-      },
-    ],
+    read_more:
+      "Reference switch(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)",
   },
   {
     id: 100,
@@ -1703,20 +1300,8 @@ const questions = [
     incorrect_answer: ["bear.bind(roar);", "roar.bind(bear);", "bear[roar]();"],
     // correct_answer: 3,
     correct_answer: "roar.apply(bear);",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply",
-        reference: "Apply Function",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
-        reference: "the this keyword",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind",
-        reference: "bind Function",
-      },
-    ],
+    read_more:
+      "Reference Apply:\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)\n        Reference this:\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)\n        Reference bind:\n        (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)",
   },
   {
     id: 101,
@@ -1726,12 +1311,8 @@ const questions = [
     incorrect_answer: ["a, b => { return c; }", "a, b => c", "{ a, b } => c"],
     // correct_answer: 4,
     correct_answer: "(a,b) => c",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
-        reference: "JavaScript Arrow Functions",
-      },
-    ],
+    read_more:
+      "Reference arrow functions:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)",
   },
   {
     id: 102,
@@ -1746,12 +1327,8 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "import { printMe } from './some-file'",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
-        reference: "Importing Libraries in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference importing libraries in javascript:\n   (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)",
   },
   {
     id: 103,
@@ -1766,12 +1343,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "[2, 4, 6, 3, 5, 7]",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax",
-        reference: "Spread syntax ES6",
-      },
-    ],
+    read_more:
+      "Reference spread syntax:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)",
   },
   {
     id: 104,
@@ -1781,12 +1354,8 @@ const questions = [
     incorrect_answer: ["done()", "finally()", "catch()"],
     // correct_answer: 2,
     correct_answer: "then()",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
-        reference: "Fetch",
-      },
-    ],
+    read_more:
+      "Reference fetch:\n  (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)",
   },
   {
     id: 105,
@@ -1794,12 +1363,8 @@ const questions = [
     incorrect_answer: ["array.slice()", "array.shift()", "array.push()"],
     // correct_answer: 4,
     correct_answer: "array.replace()",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_arrays.asp",
-        reference: "Working with Arrays",
-      },
-    ],
+    read_more:
+      "Reference working with arrays:\n  (https://www.w3schools.com/js/js_arrays.asp)",
   },
   {
     id: 106,
@@ -1809,12 +1374,8 @@ const questions = [
     incorrect_answer: ["forEach", "while", "for"],
     // correct_answer: 1,
     correct_answer: "do…while",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while",
-        reference: "Loops in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference loops in js:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)",
   },
   {
     id: 107,
@@ -1825,12 +1386,8 @@ const questions = [
     incorrect_answer: ["array", "Boolean", "object"],
     // correct_answer: 1,
     correct_answer: "string",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
-        reference: "the Typeof Operator",
-      },
-    ],
+    read_more:
+      "Reference what is typeof\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)",
   },
   {
     id: 108,
@@ -1841,12 +1398,8 @@ const questions = [
     incorrect_answer: ["A", "C", "A B C"],
     // correct_answer: 1,
     correct_answer: "C B A",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector",
-        reference: "DOM querySelector",
-      },
-    ],
+    read_more:
+      "Reference query selector\n  (https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)",
   },
   {
     id: 109,
@@ -1857,12 +1410,8 @@ const questions = [
     incorrect_answer: ["[4,5,6,7,8,9,10", "[4,5,6,7]", "[1,2,3,4,5,6]"],
     // correct_answer: 4,
     correct_answer: "[4,5,6]",
-    read_more: [
-      {
-        link: "https://www.w3schools.com/js/js_functions.asp",
-        reference: "Functions in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference functions in javascript:\n  :\n  (https://www.w3schools.com/js/js_functions.asp) ",
   },
   {
     id: 110,
@@ -1873,12 +1422,8 @@ const questions = [
     incorrect_answer: ["2", "4", "8"],
     // correct_answer: 3,
     correct_answer: "6",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code",
-        reference: "JavaScript Looping Code",
-      },
-    ],
+    read_more:
+      "Reference MDN JavaScript Looping code:\n  (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)",
   },
   {
     id: 111,
@@ -1894,20 +1439,8 @@ const questions = [
     // correct_answer: 3,
     correct_answer:
       "for (let [index, value] of cipherText.entries()) {plainText += index % 2 === 0 ? value : '';}",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment",
-        reference: "JavaScript Destructuring assignment",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries",
-        reference: "JavaScript Array Entries",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder",
-        reference: "JavaScript Remainder/Modulo",
-      },
-    ],
+    read_more:
+      "Reference MDN JavaScript Destructuring:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)Reference MDN JavaScript Array entries]:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)Reference MDN JavaScript Remainder/Modulo]:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)",
   },
   {
     id: 112,
@@ -1918,18 +1451,14 @@ const questions = [
     incorrect_answer: ["Jigglypuff", "Snorlax", "Squirtle"],
     // correct_answer: 1,
     correct_answer: "Charmander",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
-        reference: "JavaScript Array.pop",
-      },
-    ],
+    read_more:
+      "Reference Array.pop:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)",
   },
   {
     id: 113,
     question: [
-      "Which statement can be used to select the element from the DOM containing the text 'The linkedIn Learning library has great JavaScript courses' from this markup?",
-      "<h1 class='content'>\n  linkedIn Learning\n  </h1>\n  <div class='content'>\n  <span class='content'>\n  The linkedIn Learning library has great JavaScript courses!\n  </span>\n  </div>",
+      "Which statement can be used to select the element from the DOM containing the text 'The LinkedIn Learning library has great JavaScript courses' from this markup?",
+      "<h1 class='content'>\n  LinkedIn Learning\n  </h1>\n  <div class='content'>\n  <span class='content'>\n  The LinkedIn Learning library has great JavaScript courses!\n  </span>\n  </div>",
     ],
     incorrect_answer: [
       "document.querySelector('div.content')",
@@ -1938,12 +1467,7 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "document.querySelector('span.content')",
-    read_more: [
-      {
-        link: "",
-        reference: "",
-      },
-    ],
+    read_more: "",
   },
   {
     id: 114,
@@ -1951,12 +1475,8 @@ const questions = [
     incorrect_answer: ["undefined", "0", "null"],
     // correct_answer: 1,
     correct_answer: "[]",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Glossary/Falsy",
-        reference: "What is Falsy",
-      },
-    ],
+    read_more:
+      "Reference Falsy]:\n  (https://developer.mozilla.org/en-US/docs/Glossary/Falsy)",
   },
   {
     id: 115,
@@ -1971,16 +1491,8 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "line 5, because lion cannot be reassigned a value",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const",
-        reference: "Const in JavaScript",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_const_assignment",
-        reference: "TypeError: invalid assignment to const 'x'",
-      },
-    ],
+    read_more:
+      "Reference const in js:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)Reference TypeError: invalid assignment to const 'x':\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_const_assignment)",
   },
   {
     id: 116,
@@ -1995,20 +1507,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "['NAME', 'AGE', 'HAIRCOLOR']",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys",
-        reference: "Object.keys()",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
-        reference: "Array.prototype.map()",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase",
-        reference: "String.prototype.toUpperCase()",
-      },
-    ],
+    read_more:
+      "Reference Object.keys():\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)Reference Array.prototype.map():\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)Reference String.prototype.toUpperCase():\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)",
   },
   {
     id: 117,
@@ -2023,12 +1523,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "animals.some(key)",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some",
-        reference: "Array.prototype.some",
-      },
-    ],
+    read_more:
+      "Reference Array.prototype.some(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)",
   },
   {
     id: 118,
@@ -2037,18 +1533,14 @@ const questions = [
       "class RainForest {\n  static minimumRainFall = 60;\n  }\n  let congo = new RainForest();\n  RainForest.minimumRainFall = 80;\n  console.log(congo.minimumRainFall);",
     ],
     incorrect_answer: [
-      "None of these answers, as static is not a feature in JavaScript.",
+      "None of these answers, as static is not a feature in Javascript.",
       "60",
       "80",
     ],
     // correct_answer: 1,
     correct_answer: "undefined",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static",
-        reference: "Classes static",
-      },
-    ],
+    read_more:
+      "Reference Classes static:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)",
   },
   {
     id: 119,
@@ -2059,12 +1551,8 @@ const questions = [
     incorrect_answer: ["obj?.a.b", "obj[a][b]", "obj.?a.?b"],
     // correct_answer: 2,
     correct_answer: "obj.a?.b",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining",
-        reference: "Optional chaining (?.)",
-      },
-    ],
+    read_more:
+      "Reference Optional chaining (?.):\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)",
   },
   {
     id: 120,
@@ -2079,12 +1567,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "It will throw a ReferenceError about 'y'.",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
-        reference: "let statement",
-      },
-    ],
+    read_more:
+      "Reference let statement:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)",
   },
   {
     id: 121,
@@ -2095,12 +1579,8 @@ const questions = [
     incorrect_answer: ["[[1, 2], [5, 7]]", "[2,7]", "[2,1,7,5]"],
     // correct_answer: 1,
     correct_answer: "[1,2,5,7]",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax",
-        reference: "Spread syntax (...)",
-      },
-    ],
+    read_more:
+      "Reference spread syntax (...):\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)",
   },
   {
     id: 122,
@@ -2111,12 +1591,8 @@ const questions = [
     incorrect_answer: ["a['x'] === b['x']", "a != b", "a.x === b.x"],
     // correct_answer: 3,
     correct_answer: "a === b",
-    read_more: [
-      {
-        link: "http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html",
-        reference: "Object equality in JavaScript",
-      },
-    ],
+    read_more:
+      "Reference:\n  (http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html)",
   },
   {
     id: 123,
@@ -2131,12 +1607,8 @@ const questions = [
     ],
     // correct_answer: 4,
     correct_answer: "number",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#basic_usage",
-        reference: "the Typeof Operator",
-      },
-    ],
+    read_more:
+      "Reference:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#basic_usage)",
   },
   {
     id: 124,
@@ -2147,20 +1619,8 @@ const questions = [
     incorrect_answer: ["3", "6", "7"],
     // correct_answer: 2,
     correct_answer: "4",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
-        reference: "Array.prototype.push()",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
-        reference: "Array.prototype.pop()",
-      },
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce",
-        reference: "Array.prototype.Reduce()",
-      },
-    ],
+    read_more:
+      "Reference:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)Reference:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)Reference:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)",
   },
   {
     id: 125,
@@ -2171,12 +1631,8 @@ const questions = [
     incorrect_answer: ["Nothing is printed to the console.", "grunt", "roar"],
     // correct_answer: 3,
     correct_answer: "undefined",
-    read_more: [
-      {
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects",
-        reference: "Working with Objects",
-      },
-    ],
+    read_more:
+      "Reference:\n  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
   },
   {
     id: 126,
@@ -2187,7 +1643,7 @@ const questions = [
     incorrect_answer: ["undefined", "Tabby", "Athena"],
     // correct_answer: 2,
     correct_answer: "Wild",
-    read_more: [{ link: "", reference: "" }],
+    read_more: "",
   },
   {
     id: 127,
@@ -2198,7 +1654,7 @@ const questions = [
     incorrect_answer: ["null no arg", "no arg no arg", "null null"],
     // correct_answer: 4,
     correct_answer: "no arg null",
-    read_more: [{ link: "", reference: "" }],
+    read_more: "",
   },
   {
     id: 128,
@@ -2209,7 +1665,7 @@ const questions = [
     incorrect_answer: ["a is 1", "a is undefined", "It won't print anything."],
     // correct_answer: 4,
     correct_answer: "a is 2",
-    read_more: [{ link: "", reference: "" }],
+    read_more: "",
   },
   {
     id: 129,
@@ -2220,7 +1676,7 @@ const questions = [
     incorrect_answer: ["6", "2", "12"],
     // correct_answer: 1,
     correct_answer: "8",
-    read_more: [{ link: "", reference: "" }],
+    read_more: "",
   },
   {
     id: 130,
@@ -2235,7 +1691,7 @@ const questions = [
     ],
     // correct_answer: 2,
     correct_answer: "flagDatabase.countries[0].flag",
-    read_more: [{ link: "", reference: "" }],
+    read_more: "",
   },
   {
     id: 131,
@@ -2250,15 +1706,14 @@ const questions = [
     ],
     // correct_answer: 1,
     correct_answer: "conservation && !deforestation",
-    read_more: [{ link: "", reference: "" }],
+    read_more: "",
   },
   // {
   //   id: 132,
-  //   question: ["Which snippet is the correct answer", "const numbers = [1,2,3]; \n numbers[10] = 11; \n console.log(numbers);"],
-  //   incorrect_answer: ["[1,2,3,null x 7, 11]", "[1,2,3,11]", "[1,2,3,empty x 7, 11]", "syntax error"],
-  // correct_answer: "[1,2,3,empty x 7, 11], to read more about this topic check out this link about sparse arrays","],
-  // read_more: [{ link: "https://www.freecodecamp.org/news/sparse-and-dense-arrays-in-javascript/#:~:text=A%20sparse%20array%20is%20one,the%20sequence%20of%20their%20indices.&text=Normally%2C%20the%20length%20property%20of,sparse%20arrays%20they%20don't.", reference: "The array will be sparse, meaning that it has empty slots." }],
-
+  //   question: ["", ""],
+  //   incorrect_answer: ["", "", "", ""],
+  //   correct_answer: 3,
+  //   read_more: "",
   // },
 ];
 
