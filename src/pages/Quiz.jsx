@@ -21,8 +21,10 @@ const Quiz = () => {
     setSelected,
     report,
     setReport,
+    userQuizQuestions,
+    setUserQuizQuestions,
   } = useContext(DataContext);
-  console.log("currQues", currQues);
+  // console.log("currQues", currQues);
 
   // const [currentQuestion, setCurrentQuestion] = useState({});
 
@@ -30,7 +32,7 @@ const Quiz = () => {
   const [choices, setChoices] = useState([]);
   // const [selected, setSelected] = useState("");
   const [correct, setCorrect] = useState("");
-  console.log("correct", correct);
+  // console.log("correct", correct);
 
   // to handle th question array and show the code part if there is one
   const [showCode, setShowCode] = useState(false);
@@ -44,6 +46,8 @@ const Quiz = () => {
   // const [questionsArray, setQuestionsArray] = useState([]);
 
   const navigate = useNavigate();
+
+  setUserQuizQuestions(randomQuestions);
 
   useEffect(() => {
     setChoices(
@@ -60,7 +64,7 @@ const Quiz = () => {
   useEffect(() => {
     setShowCode(randomQuestions[currQues].length > 1);
   }, [currQues]);
-  console.log("choices", choices);
+  // console.log("choices", choices);
 
   const handleSelected = (e, choice) => {
     setSelected(choice);
@@ -74,7 +78,7 @@ const Quiz = () => {
       setCurrQues(currQues + 1);
       setDuration(90);
       if (currQues + 1 === randomQuestions.length) {
-        navigate("/result");
+        navigate("/results");
       }
     } else if (timerState) {
       const timer = setInterval(() => {
@@ -105,7 +109,7 @@ const Quiz = () => {
       setSelected("");
 
       if (currQues === randomQuestions.length - 1) {
-        navigate("/result");
+        navigate("/results");
         setTimerState(false);
       }
     }

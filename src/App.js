@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/quiz" element={<Quiz />} />
-        <Route exact path="/result" element={<Results />} />
+        <Route exact path="/results" element={<Results />} />
 
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Question = ({
+const ReportQuestion = ({
   idx,
   question,
   correct_answer,
@@ -68,4 +68,4 @@ const Question = ({
   );
 };
 
-export default Question;
+export default ReportQuestion;

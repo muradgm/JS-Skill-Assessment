@@ -18,6 +18,8 @@ export const DataContextProvider = ({ children }) => {
     resources: [],
   });
 
+  const [userQuizQuestions, setUserQuizQuestions] = useState([]);
+
   const [score, setScore] = useState(0);
   const [selected, setSelected] = useState([]);
 
@@ -48,6 +50,7 @@ export const DataContextProvider = ({ children }) => {
   }, []);
 
   // console.log("randomQuestions", randomQuestions);
+  // console.log("userQuizQuestions", userQuizQuestions);
 
   return (
     <DataContext.Provider
@@ -71,6 +74,8 @@ export const DataContextProvider = ({ children }) => {
         setSelected,
         report,
         setReport,
+        userQuizQuestions,
+        setUserQuizQuestions,
       }}
     >
       {children}

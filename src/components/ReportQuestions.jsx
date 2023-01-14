@@ -1,37 +1,35 @@
-import { useState, useContext, useEffect } from "react";
+import { useContext } from "react";
 import { DataContext } from "../context/DataContext";
-import { Container, Section, Header, Button } from "../components/index.js";
+import { Container, Section, Header, Button } from "./index.js";
 import { MdClose } from "react-icons/md";
 import Modal from "./Modal";
-import Question from "./Question";
+import ReportQuestion from "./ReportQuestion";
 
-const Questions = ({ showResults, setShowResults }) => {
-  const { userName, userQuizQuestions } = useContext(DataContext);
+const ReportQuestions = ({ setShowReport, showReport }) => {
+  const { user, userQuizQuestions } = useContext(DataContext);
 
   userQuizQuestions.map((question) =>
-    question.read_more.map((read) =>
-      console.log(read["link"], read["reference"])
-    )
+    console.log("question", question.selected_answer)
   );
 
   return (
     <>
-      {showResults ? (
+      {showReport ? (
         <Modal>
           <Container classes="my-10 overflow-y-scroll">
             <button
               className="fixed top-0 right-0 p-6"
               onClick={() => {
-                setShowResults(false);
+                setShowReport(false);
               }}
             >
               <MdClose className="text-3xl" />
             </button>
             <Section classes="space-x-0">
               {/* <Header name={name} /> */}
-              <h1 className="mt-4 text-2xl font-bold text-center">
-                Hello {userName()}, here is your results.
-              </h1>
+              {/* <h1 className="mt-4 text-2xl font-bold text-center">
+                Hello {user}, here is your report.
+              </h1> */}
             </Section>
             <Section classes="space-y-0">
               {userQuizQuestions.map(
@@ -39,7 +37,7 @@ const Questions = ({ showResults, setShowResults }) => {
                   { question, correct_answer, selected_answer, read_more },
                   idx
                 ) => (
-                  <Question
+                  <ReportQuestion
                     idx={idx}
                     correct_answer={correct_answer}
                     read_more={read_more}
@@ -56,4 +54,4 @@ const Questions = ({ showResults, setShowResults }) => {
   );
 };
 
-export default Questions;
+export default ReportQuestions;
