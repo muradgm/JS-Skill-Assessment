@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../context/DataContext";
-import { Link } from "react-router-dom";
+import ReportQuestions from "../components/ReportQuestions";
 import {
   Container,
   Section,
@@ -8,7 +8,7 @@ import {
   Button,
   Loader,
 } from "../components/index.js";
-import questions from "../test.js";
+// import questions from "../test.js";
 
 //Icons
 import {
@@ -16,6 +16,7 @@ import {
   IoWarningOutline,
   IoTrophyOutline,
 } from "react-icons/io5";
+import Report from "./Report";
 
 const ScoreResult = ({ grade, score, name }) => {
   const [result, setResult] = useState({
@@ -74,6 +75,13 @@ const ScoreResult = ({ grade, score, name }) => {
 const Results = () => {
   const { score, name } = useContext(DataContext);
   const [loadingPage, setLoadingPage] = useState(false);
+  const [showReport, setShowReport] = useState(false);
+
+  const handleReportModal = () => {
+    setShowReport(true);
+  };
+
+  console.log("showReport", showReport);
 
   const handleLoadingPage = () => {
     setLoadingPage(true);
@@ -96,11 +104,27 @@ const Results = () => {
         <ScoreResult grade={userScore} score={score} name={name} />
       </Section>
       <Section classes="flex justify-between space-y-0">
-        <Link to="/">
-          <Button resultsBtn="text-blue-600  ring-2 ring-blue-600 hover:bg-blue-600 hover:text-white hover:ring-0">
-            Show Results
-          </Button>
-        </Link>
+        <Button
+          resultsBtn="text-blue-600  ring-2 ring-blue-600 hover:bg-blue-600 hover:text-white hover:ring-0"
+          handleClick={handleReportModal}
+        >
+          Show Report
+        </Button>
+        {showReport && (
+          <Report
+            showReport={showReport}
+            setShowReport={setShowReport}
+            score={score}
+          />
+        )}
+
+        {showReport && (
+          <ReportQuestions
+            showReport={showReport}
+            setShowReport={setShowReport}
+          />
+        )}
+
         <Button handleClick={handleLoadingPage}>Try Again</Button>
         {loadingPage && (
           <Loader loadingPage={loadingPage} setLoadingPage={setLoadingPage} />

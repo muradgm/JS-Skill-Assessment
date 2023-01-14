@@ -19,10 +19,10 @@ const Quiz = () => {
     setDuration,
     selected,
     setSelected,
-    report,
-    setReport,
+    userAssessmentReport,
+    setUserAssessmentReport,
   } = useContext(DataContext);
-  console.log("currQues", currQues);
+  // console.log("currQues", currQues);
 
   // const [currentQuestion, setCurrentQuestion] = useState({});
 
@@ -30,7 +30,7 @@ const Quiz = () => {
   const [choices, setChoices] = useState([]);
   // const [selected, setSelected] = useState("");
   const [correct, setCorrect] = useState("");
-  console.log("correct", correct);
+  // console.log("correct", correct);
 
   // to handle th question array and show the code part if there is one
   const [showCode, setShowCode] = useState(false);
@@ -44,6 +44,10 @@ const Quiz = () => {
   // const [questionsArray, setQuestionsArray] = useState([]);
 
   const navigate = useNavigate();
+
+  // setUserQuizQuestions(randomQuestions);
+  // console.log("userQuizQuestions", userQuizQuestions);
+  // console.log("randomQuestions", randomQuestions);
 
   useEffect(() => {
     setChoices(
@@ -60,7 +64,7 @@ const Quiz = () => {
   useEffect(() => {
     setShowCode(randomQuestions[currQues].length > 1);
   }, [currQues]);
-  console.log("choices", choices);
+  // console.log("choices", choices);
 
   const handleSelected = (e, choice) => {
     setSelected(choice);
@@ -74,7 +78,7 @@ const Quiz = () => {
       setCurrQues(currQues + 1);
       setDuration(90);
       if (currQues + 1 === randomQuestions.length) {
-        navigate("/result");
+        navigate("/results");
       }
     } else if (timerState) {
       const timer = setInterval(() => {
@@ -103,15 +107,30 @@ const Quiz = () => {
       setCurrQues(currQues + 1);
       setHighlightSelected(false);
       setSelected("");
+      //add currQues to report
+      // setReport([...report, currQues]);
+      // we need to add selected to report.user_answer
+      setUserAssessmentReport([
+        ...userAssessmentReport,
+        {
+          question: randomQuestions[currQues].question,
+          correct_answer: randomQuestions[currQues].correct_answer,
+          user_answer: selected,
+          idx: randomQuestions[currQues].id,
+          resources: randomQuestions[currQues].read_more,
+        },
+      ]);
 
       if (currQues === randomQuestions.length - 1) {
-        navigate("/result");
+        navigate("/results");
         setTimerState(false);
       }
     }
     setHighlightSelected(false);
   };
 
+  console.log("selected", selected);
+  console.log("userAssessmentReport", userAssessmentReport);
   useEffect(() => {
     if (randomQuestions[currQues].question.length > 1) {
       setShowCode(true);

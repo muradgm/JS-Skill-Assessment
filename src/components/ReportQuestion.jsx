@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../context/DataContext";
 
-const Question = ({
+const ReportQuestion = ({
   idx,
   question,
   correct_answer,
-  selected_answer,
-  read_more,
+  user_answer,
+  resources,
 }) => {
+  const { userAssessmentReport } = useContext(DataContext);
   return (
     <div key={idx} className="p-10 text-base antialiased">
       <div className="shadow rounded-lg">
@@ -28,17 +30,17 @@ const Question = ({
         </div>
         <div
           className={`px-6 py-4 rounded-b-lg flex justify-start items-center ${
-            selected_answer === correct_answer ? "bg-green-300 " : "bg-red-300 "
+            user_answer === correct_answer ? "bg-green-300 " : "bg-red-300 "
           }`}
         >
           <p className="font-bold text-sm mr-2">Your Answer: </p>
-          <p>{selected_answer}</p>
+          <p>{user_answer}</p>
         </div>
       </div>
       <div className="pt-4 flex items-center justify-start">
         <p className="pl-6 pr-1">read more: </p>{" "}
         <ul className="flex">
-          {read_more.map((read, idx) =>
+          {resources.map((read, idx) =>
             read["link"] === "" && read["reference"] === "" ? (
               <p key={idx} className="text-blue-500 italic">
                 No Resources Available!
@@ -68,4 +70,4 @@ const Question = ({
   );
 };
 
-export default Question;
+export default ReportQuestion;

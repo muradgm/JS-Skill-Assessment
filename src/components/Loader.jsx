@@ -9,6 +9,13 @@ const Loader = ({ loadingPage, setLoadingPage }) => {
 
   const navigate = useNavigate();
 
+  const handleRetakeQuiz = () => {
+    setLoadingPage(true);
+    setTimerState(true);
+    setDuration(90);
+    navigate("/quiz");
+  };
+
   const parentRef = useRef(null);
   useEffect(() => {
     const tl = gsap.timeline();
@@ -27,15 +34,12 @@ const Loader = ({ loadingPage, setLoadingPage }) => {
         stagger: 2,
         ease: "power4.out",
         onComplete: () => {
-          setTimerState(true);
-          setDuration(90);
-          navigate("/quiz");
-          setLoadingPage(false);
+          handleRetakeQuiz();
         },
       },
       1.5
     );
-  }, [setLoadingPage, setTimerState, setDuration, navigate]);
+  }, [setLoadingPage, handleRetakeQuiz]);
 
   return (
     <>

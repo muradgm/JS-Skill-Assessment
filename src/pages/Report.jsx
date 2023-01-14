@@ -9,8 +9,6 @@ import { DataContext } from "../context/DataContext";
 // body:
 // list of questions with the question number, the question, the user's answer, and the correct answer and the external links to the resources.
 
-
-
 // Path: src/pages/Results.jsx
 // Compare this snippet from src/pages/Results.jsx:
 
@@ -23,12 +21,15 @@ import {
   IoTrophyOutline,
 } from "react-icons/io5";
 
-const Report = () => {
-  const {
-    randomQuestions,
-    selected,
-    setSelected,
-  } = useContext(DataContext);
+const Report = ({ showReport, setShowReport }) => {
+  const { randomQuestions, selected, setSelected } = useContext(DataContext);
+  const [report, setReport] = useState({
+    language: "",
+    questions: [],
+    answers: [],
+    correctAnswer: [],
+    resources: [],
+  });
 
   const navigate = useNavigate();
 
