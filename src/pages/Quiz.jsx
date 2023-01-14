@@ -22,15 +22,10 @@ const Quiz = () => {
     userAssessmentReport,
     setUserAssessmentReport,
   } = useContext(DataContext);
-  // console.log("currQues", currQues);
-
-  // const [currentQuestion, setCurrentQuestion] = useState({});
 
   //state to handle user answer
   const [choices, setChoices] = useState([]);
-  // const [selected, setSelected] = useState("");
   const [correct, setCorrect] = useState("");
-  // console.log("correct", correct);
 
   // to handle th question array and show the code part if there is one
   const [showCode, setShowCode] = useState(false);
@@ -41,13 +36,8 @@ const Quiz = () => {
   const [highlightSelected, setHighlightSelected] = useState(false);
   // used to add styling to the timer section
   const [warning, setWarning] = useState(false);
-  // const [questionsArray, setQuestionsArray] = useState([]);
 
   const navigate = useNavigate();
-
-  // setUserQuizQuestions(randomQuestions);
-  // console.log("userQuizQuestions", userQuizQuestions);
-  // console.log("randomQuestions", randomQuestions);
 
   useEffect(() => {
     setChoices(
@@ -61,10 +51,14 @@ const Quiz = () => {
     setCorrect(randomQuestions[currQues].correct_answer);
   }, [currQues]);
 
+  console.log(
+    "randomQuestions[currQues].correct_answer",
+    randomQuestions[currQues].correct_answer
+  );
+
   useEffect(() => {
     setShowCode(randomQuestions[currQues].length > 1);
   }, [currQues]);
-  // console.log("choices", choices);
 
   const handleSelected = (e, choice) => {
     setSelected(choice);
@@ -94,7 +88,6 @@ const Quiz = () => {
     }
   }, [duration, currQues, timerState]);
 
-  //! check logic, should be array.length, if currQues === 14 should be outside of first if statement
   const handleClick = () => {
     setTimerState(true);
     setDuration(90);
@@ -107,9 +100,6 @@ const Quiz = () => {
       setCurrQues(currQues + 1);
       setHighlightSelected(false);
       setSelected("");
-      //add currQues to report
-      // setReport([...report, currQues]);
-      // we need to add selected to report.user_answer
       setUserAssessmentReport([
         ...userAssessmentReport,
         {
@@ -129,8 +119,6 @@ const Quiz = () => {
     setHighlightSelected(false);
   };
 
-  console.log("selected", selected);
-  console.log("userAssessmentReport", userAssessmentReport);
   useEffect(() => {
     if (randomQuestions[currQues].question.length > 1) {
       setShowCode(true);

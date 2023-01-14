@@ -3,26 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { Container, Section, Header, Button } from "../components/index.js";
 import { DataContext } from "../context/DataContext";
 
-// add the selected answers to an object with the question number as the key and the answer as the value and store it in the context and then navigate to the report page to display the report.  The report should include the following:
-// header: ${language} ASSESSMENT REPORT
-// header: language: ${language} logo and name
-// body:
-// list of questions with the question number, the question, the user's answer, and the correct answer and the external links to the resources.
-
-// Path: src/pages/Results.jsx
-// Compare this snippet from src/pages/Results.jsx:
-
-import questions from "../test.js";
-
 //Icons
-import {
-  IoCloseCircleOutline,
-  IoWarningOutline,
-  IoTrophyOutline,
-} from "react-icons/io5";
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 const Report = ({ showReport, setShowReport }) => {
-  const { randomQuestions, selected, setSelected } = useContext(DataContext);
+  const { selected, setSelected } = useContext(DataContext);
   const [report, setReport] = useState({
     language: "",
     questions: [],

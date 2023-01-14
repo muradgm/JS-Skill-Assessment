@@ -40,9 +40,6 @@ export const DataContextProvider = ({ children }) => {
     setRandomQuestions(shuffleQuestions(questions).slice(0, 15));
   }, []);
 
-  // console.log("randomQuestions", randomQuestions);
-  // console.log("userQuizQuestions", userQuizQuestions);
-
   return (
     <DataContext.Provider
       value={{

@@ -8,7 +8,6 @@ import {
   Button,
   Loader,
 } from "../components/index.js";
-// import questions from "../test.js";
 
 //Icons
 import {
@@ -16,7 +15,6 @@ import {
   IoWarningOutline,
   IoTrophyOutline,
 } from "react-icons/io5";
-import Report from "./Report";
 
 const ScoreResult = ({ grade, score, name }) => {
   const [result, setResult] = useState({
@@ -31,7 +29,6 @@ const ScoreResult = ({ grade, score, name }) => {
         icon: <IoTrophyOutline />,
         message: [
           `Congratulations!`,
-          // ${name[0].toUpperCase() + name.slice(1)},
           `You passed the quiz! You scored ${score}/15. You can now proceed to take the test.`,
         ],
         color: "text-green-500",

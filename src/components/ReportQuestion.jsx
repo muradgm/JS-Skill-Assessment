@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { DataContext } from "../context/DataContext";
+import React from "react";
 
 const ReportQuestion = ({
   idx,
@@ -8,7 +7,6 @@ const ReportQuestion = ({
   user_answer,
   resources,
 }) => {
-  const { userAssessmentReport } = useContext(DataContext);
   return (
     <div key={idx} className="p-10 text-base antialiased">
       <div className="shadow rounded-lg">

@@ -41,8 +41,6 @@ const Main = () => {
     e.target.checked === true ? setShow(true) : setShow(false);
   };
 
-  // console.log("QUESTION", Object.values(randomQuestions[currQues])); // question array
-
   return (
     <Container classes="max-w-xxl min-w-full divide-y">
       <Section classes="pt-4">
@@ -122,7 +120,7 @@ const Main = () => {
           disabled={name.length === 0 ? true : false}
           handleClick={handleStartQuiz}
         >
-          Start Quiz
+          Start Assessment
         </Button>
       </Section>
     </Container>

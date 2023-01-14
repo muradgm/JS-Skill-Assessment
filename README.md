@@ -5,6 +5,7 @@ A simple React project that simulates a multiple-choice JavaScript test. The pro
 ![Screenshot - Home Page](./src/assets/Javascript%20test%20Simulator%20-%20home%20page.png)
 ![Screenshot - Questions Page](./src/assets/Javascript%20test%20Simulator%20-%20Questions.png)
 ![Screenshot - Results Page](./src/assets/Javascript%20test%20Simulator%20-%20Results%20Page.png)
+![Screenshot - Report Page](./src/assets/Javascript%20test%20Simulator%20-%20Report%20%20Modal.png)
 ## Features
 
 - Count-down timer for each question
