@@ -9,19 +9,10 @@ export const DataContextProvider = ({ children }) => {
     email: "",
   });
 
-  const [report, setReport] = useState({
-    idx: 0,
-    question: [],
-    incorrect_answer: [],
-    correct_answer: [],
-    user_answer: [],
-    resources: [],
-  });
-
-  const [userQuizQuestions, setUserQuizQuestions] = useState([]);
+  const [userAssessmentReport, setUserAssessmentReport] = useState([]);
 
   const [score, setScore] = useState(0);
-  const [selected, setSelected] = useState([]);
+  const [selected, setSelected] = useState("");
 
   // an array of 15 random questions sliced from the questions array in test.js
   const [randomQuestions, setRandomQuestions] = useState([]);
@@ -72,10 +63,8 @@ export const DataContextProvider = ({ children }) => {
         shuffleQuestions,
         selected,
         setSelected,
-        report,
-        setReport,
-        userQuizQuestions,
-        setUserQuizQuestions,
+        userAssessmentReport,
+        setUserAssessmentReport,
       }}
     >
       {children}

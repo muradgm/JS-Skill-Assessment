@@ -6,9 +6,9 @@ import Modal from "./Modal";
 import ReportQuestion from "./ReportQuestion";
 
 const ReportQuestions = ({ setShowReport, showReport }) => {
-  const { user, userQuizQuestions } = useContext(DataContext);
+  const { user, userAssessmentReport } = useContext(DataContext);
 
-  userQuizQuestions.map((question) =>
+  userAssessmentReport.map((question) =>
     console.log("question", question.selected_answer)
   );
 
@@ -26,22 +26,19 @@ const ReportQuestions = ({ setShowReport, showReport }) => {
               <MdClose className="text-3xl" />
             </button>
             <Section classes="space-x-0">
-              {/* <Header name={name} /> */}
-              {/* <h1 className="mt-4 text-2xl font-bold text-center">
-                Hello {user}, here is your report.
-              </h1> */}
+              <Header name={user.name} />
+              <h1 className="mt-4 text-2xl font-bold text-center">
+                Hello {user.name}, here is your report.
+              </h1>
             </Section>
             <Section classes="space-y-0">
-              {userQuizQuestions.map(
-                (
-                  { question, correct_answer, selected_answer, read_more },
-                  idx
-                ) => (
+              {userAssessmentReport.map(
+                ({ question, correct_answer, user_answer, resources }, idx) => (
                   <ReportQuestion
                     idx={idx}
                     correct_answer={correct_answer}
-                    read_more={read_more}
-                    selected_answer={selected_answer}
+                    resources={resources}
+                    user_answer={user_answer}
                     question={question}
                   />
                 )

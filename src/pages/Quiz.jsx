@@ -19,10 +19,8 @@ const Quiz = () => {
     setDuration,
     selected,
     setSelected,
-    report,
-    setReport,
-    userQuizQuestions,
-    setUserQuizQuestions,
+    userAssessmentReport,
+    setUserAssessmentReport,
   } = useContext(DataContext);
   // console.log("currQues", currQues);
 
@@ -47,7 +45,9 @@ const Quiz = () => {
 
   const navigate = useNavigate();
 
-  setUserQuizQuestions(randomQuestions);
+  // setUserQuizQuestions(randomQuestions);
+  // console.log("userQuizQuestions", userQuizQuestions);
+  // console.log("randomQuestions", randomQuestions);
 
   useEffect(() => {
     setChoices(
@@ -107,6 +107,19 @@ const Quiz = () => {
       setCurrQues(currQues + 1);
       setHighlightSelected(false);
       setSelected("");
+      //add currQues to report
+      // setReport([...report, currQues]);
+      // we need to add selected to report.user_answer
+      setUserAssessmentReport([
+        ...userAssessmentReport,
+        {
+          question: randomQuestions[currQues].question,
+          correct_answer: randomQuestions[currQues].correct_answer,
+          user_answer: selected,
+          idx: randomQuestions[currQues].id,
+          resources: randomQuestions[currQues].read_more,
+        },
+      ]);
 
       if (currQues === randomQuestions.length - 1) {
         navigate("/results");
@@ -116,6 +129,8 @@ const Quiz = () => {
     setHighlightSelected(false);
   };
 
+  console.log("selected", selected);
+  console.log("userAssessmentReport", userAssessmentReport);
   useEffect(() => {
     if (randomQuestions[currQues].question.length > 1) {
       setShowCode(true);
