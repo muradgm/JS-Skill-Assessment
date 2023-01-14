@@ -55,14 +55,14 @@ The project will be running on <http://localhost:3000>
 
 ## Future Plans
 
-- Adding more questions to the JavaScript test simulator.
-- Expanding the simulator to include tests for React, HTML, CSS, MongoDB, NodeJS, and TypeScript.
+- Adding more questions to the JavaScript test simulator to improve its functionality and user experience.
+- Expanding the simulator to include tests for React, HTML, CSS, MongoDB, NodeJS, and TypeScript to cover a wider range of technologies.
+- Planning to create an API to store all questions and create a backend for easier management and updates.
 
 ## Notes
 
 - Please keep in mind that the test questions and answers are for simulation only, so it's not the actual test questions.
 - Please check the 'send me my score' and add your email to receive the test questions and answers
-
 
 ## License
 
