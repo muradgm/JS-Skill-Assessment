@@ -110,13 +110,6 @@ const Results = () => {
         >
           Show Report
         </Button>
-        {showReport && (
-          <Report
-            showReport={showReport}
-            setShowReport={setShowReport}
-            score={score}
-          />
-        )}
 
         {showReport && (
           <ReportQuestions

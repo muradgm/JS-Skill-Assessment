@@ -4,7 +4,7 @@ const Modal = ({ children }) => {
   return (
     <>
       <div className="flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
-        <div className=" w-9/12 mx-auto inset-0 overscroll-y-auto flex justify-center fixed">
+        <div className=" lg:w-9/12 lg:mx-auto inset-0 overscroll-y-auto flex justify-center fixed w-screen">
           {children}
         </div>
       </div>

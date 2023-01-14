@@ -9,6 +9,7 @@ const Loader = ({ loadingPage, setLoadingPage }) => {
 
   const navigate = useNavigate();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleRetakeQuiz = () => {
     setLoadingPage(true);
     setTimerState(true);
@@ -49,11 +50,11 @@ const Loader = ({ loadingPage, setLoadingPage }) => {
             <div className="relative w-full h-full flex justify-center">
               {/*content*/}
               <Container classes="relative w-8/12 flex flex-col m-auto h-2/4 items-center justify-between">
-                <Section classes="pt-4 w-full">
+                <Section classes="pt-4 w-full space-y-2">
                   <Header />
                 </Section>
                 {/*body*/}
-                <Section classes="relative flex justify-center w-full h-full">
+                <Section classes="relative flex justify-center w-full h-full space-y-2">
                   <div
                     ref={parentRef}
                     className="absolute w-full flex justify-center"
